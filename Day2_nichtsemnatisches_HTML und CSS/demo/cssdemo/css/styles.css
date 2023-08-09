@@ -54,3 +54,24 @@ section article div h4 {
 section div h2 {
   background-color: bisque;
 }
+
+/* hintergrund bild eingeben */
+
+section div {
+  background-color: brown;
+  height: 200px;
+  /* - background-image: url("https://plus.unsplash.com/premium_photo-1673283380425-0f41f67db1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60"); */
+  /* bild nur 1 mal, keine wiederholen */
+
+  /* - background-repeat: no-repeat; */
+
+  /* bild mittig*/
+
+  /* -background-position: center; */
+  /* bild complett zu sehen */
+  background-size: contain;
+
+  /* die erste 3 (kommentiert in rosa) kann man ein shortcut mit */
+  background: url("https://plus.unsplash.com/premium_photo-1673283380425-0f41f67db1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60")
+    no-repeat center;
+}
