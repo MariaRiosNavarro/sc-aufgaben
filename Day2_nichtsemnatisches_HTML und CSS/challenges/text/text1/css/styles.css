@@ -16,16 +16,18 @@ li {
   font-size: 20px;
 }
 
+/* we could also have used .firstList  too */
 li:first-of-type {
   text-decoration: overline;
   text-align: left;
 }
 
+/* we could also have used .secondList  too */
 li:nth-of-type(2) {
   text-decoration: line-through;
   text-align: center;
 }
-
+/* we could also have used .thirdListt  too */
 li:last-of-type {
   text-decoration: underline;
   text-align: right;
