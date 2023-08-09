@@ -38,6 +38,7 @@ p {
   text-align: center;
 }
 
+/* change the color of the text, becouse we can not read it */
 .b-image p {
   color: red;
 }
