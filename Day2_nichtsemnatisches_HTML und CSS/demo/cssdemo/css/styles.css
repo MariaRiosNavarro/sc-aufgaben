@@ -75,3 +75,15 @@ section div {
   background: url("https://plus.unsplash.com/premium_photo-1673283380425-0f41f67db1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60")
     no-repeat center;
 }
+
+h6 {
+  background-color: aqua;
+  color: brown;
+  font-size: 25px;
+}
+
+span {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+}
