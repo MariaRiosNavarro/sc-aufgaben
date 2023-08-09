@@ -1,0 +1,110 @@
+/* Cinzel */
+
+@font-face {
+  font-family: CinzelVariable;
+  src: url(../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
+/* Lato */
+@font-face {
+  font-family: Lato;
+  src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: LatoItalic;
+  src: url(../assets/fonts/Lato/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: LatoThin;
+  src: url(../assets/fonts/Lato/Lato-Thin.ttf);
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+/* Pacifico */
+
+@font-face {
+  font-family: Pacifico;
+  src: url(../assets/fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+/* Shadows */
+
+@font-face {
+  font-family: Shadows;
+  src: url(../assets/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+
+/* Cinzel */
+
+.font-cinzel {
+  font-family: CinzelVariable;
+}
+
+.style-italic {
+  font-style: italic;
+}
+
+.cinzel-12 {
+  font-size: 12px;
+}
+
+.cinzel-36 {
+  font-size: 36px;
+}
+
+.cinzel-52 {
+  font-size: 52px;
+}
+
+/* Lato */
+
+.font-lato {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.lato-thin {
+  font-family: LatoThin, Arial, Helvetica, sans-serif;
+}
+.lato-bold {
+  font-family: LatoBold, Arial, Helvetica, sans-serif;
+}
+
+/* Pacifico */
+
+.font-pacifico {
+  font-family: Pacifico, Arial, Helvetica, sans-serif;
+}
+
+.shadow-pacifico {
+  text-shadow: 1px 1px 5px green;
+}
+
+.underline-pacifico {
+  text-decoration: underline;
+}
+
+.transform-pacifico {
+  text-transform: lowercase;
+}
+
+/* Shadow */
+
+.font-shadows {
+  font-family: Shadows, Arial, Helvetica, sans-serif;
+}
+
+.shadows-background {
+  background-color: green;
+}
+.shadows-color {
+  color: green;
+}
+.shadows-border {
+  border: 1px dotted black;
+}
