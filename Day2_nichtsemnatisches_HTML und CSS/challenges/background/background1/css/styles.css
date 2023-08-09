@@ -1,0 +1,13 @@
+/* https://images.unsplash.com/photo-1492273840898-6102ad35701e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlfHx8fHx8MTY5MTU3NzI4Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 */
+
+section {
+  background-color: linen;
+}
+h1 {
+  background-color: lightblue;
+}
+
+article {
+  background: url(https://images.unsplash.com/photo-1492273840898-6102ad35701e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlfHx8fHx8MTY5MTU3NzI4Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)
+    no-repeat center;
+}
