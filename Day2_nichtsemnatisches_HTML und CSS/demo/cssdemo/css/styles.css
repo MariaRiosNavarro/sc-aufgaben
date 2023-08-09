@@ -1,3 +1,56 @@
 body {
   background-color: antiquewhite;
 }
+
+p {
+  background-color: aqua;
+}
+
+/* p tag nur in den article ändern */
+
+article p {
+  background-color: violet;
+}
+
+section ul li {
+  background-color: lightyellow;
+}
+/* letzte von der Gruppe */
+section ul li:last-child {
+  background-color: lightgreen;
+}
+/* erste von der Gruppe */
+
+section ul li:first-child {
+  background-color: lightgrey;
+}
+
+/* letzte von Typen */
+h4:last-of-type {
+  color: brown;
+}
+
+h4:first-of-type {
+  color: blue;
+}
+
+/* bestimmte von einer Gruppe */
+
+section ul li:nth-child(2) {
+  background-color: orange;
+}
+
+/* bestimmte Typen */
+ul li:nth-last-of-type(3) {
+  background-color: darksalmon;
+}
+
+/* SELEKTORSPEZIFIKATION: wenn etwas geanuer definiert ist in ein klassen konflikt, ist die benutzt wird */
+
+section article div h4 {
+  background-color: red;
+}
+
+section div h2 {
+  background-color: bisque;
+}
