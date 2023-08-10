@@ -1,5 +1,24 @@
-* {
+/* * {
   box-sizing: border-box;
+} */
+
+p {
+  border: 2px solid orange;
+  color: rgb(141, 81, 206);
+  padding: 10px;
+}
+
+/* !important hover works in the p not in the letter, also musst to be before!! */
+
+p::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p:hover::first-letter {
+  color: red;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 h1 {
@@ -37,21 +56,3 @@ ul {
 li {
   box-shadow: 0 1px rgb(93, 163, 93);
 }
-
-p {
-  border: 2px solid orange;
-  color: rgb(141, 81, 206);
-  text-align: left;
-}
-
-p::first-letter {
-  font-size: 20px;
-  padding: 10px;
-}
-
-/* p::first-letter:hover {
-  color: red;
-  font-size: 20px;
-  cursor: pointer;
-  
-} */
