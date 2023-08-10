@@ -72,6 +72,6 @@ div {
   /* zentrieren mit margin */
   margin: 0 auto 40px auto;
   margin: 0 auto;
-  /* zentrieren text */
+  /* zentrieren text rechts/link auto */
   text-align: center;
 }
