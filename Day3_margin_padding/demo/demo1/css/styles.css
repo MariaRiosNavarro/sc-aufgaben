@@ -63,3 +63,15 @@ div {
   height: 60px;
   width: 70px;
 }
+
+.zweitediv {
+  background-color: beige;
+  padding: 3px;
+  height: auto;
+  width: 250px;
+  /* zentrieren mit margin */
+  margin: 0 auto 40px auto;
+  margin: 0 auto;
+  /* zentrieren text */
+  text-align: center;
+}
