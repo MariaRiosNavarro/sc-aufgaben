@@ -10,17 +10,10 @@
 
 /* --- */
 
-div {
-  background-color: red;
-  height: 100px;
-  width: 100px;
-  border: 2px solid black;
-}
-
 /* Ohne Box-sizing wird die breite: 140 */
 /* Wenn eine Bestimmte breite haben wollen ist mit border-box */
 
-article {
+.displays {
   background-color: lightgreen;
   height: 80px;
   width: 300px;
@@ -29,6 +22,10 @@ article {
 }
 
 div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
   /* ! shorthand */
 
   padding: 5px 3px 2px 0;
@@ -42,6 +39,27 @@ div {
   margin-right: 4px;
 
   /* ! YX Axe (oben/unten-links/rechts)*/
-  margin: 50px 0;
-  padding: 0 5px;
+  margin: 12px 1px;
+  padding: 1px 5px;
+}
+
+.displays {
+  background-color: bisque;
+  display: inline-block;
+  margin: 4px;
+  height: 200px;
+}
+
+.displays p {
+  background-color: aquamarine;
+}
+
+.text article p {
+  background-color: lightblue;
+  margin: 3px;
+  padding: 5px;
+  /* wir können jetzt height und width an ein Block element geben mit inline-block */
+  display: inline-block;
+  height: 60px;
+  width: 70px;
 }
