@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+article {
+  border: 3px solid black;
+  margin: 10px;
+  background-color: rgb(149, 195, 149);
+}
+
+p {
+  padding: 20px;
+}
