@@ -14,7 +14,7 @@ div {
   background-color: red;
   height: 100px;
   width: 100px;
-  border: 20px solid black;
+  border: 2px solid black;
 }
 
 /* Ohne Box-sizing wird die breite: 140 */
@@ -26,4 +26,22 @@ article {
   width: 300px;
   padding: 5px;
   margin: 10px;
+}
+
+div {
+  /* ! shorthand */
+
+  padding: 5px 3px 2px 0;
+  margin: 0 0 30px 0;
+
+  /* ! alle werte */
+
+  margin-top: 1px;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  margin-right: 4px;
+
+  /* ! YX Axe (oben/unten-links/rechts)*/
+  margin: 50px 0;
+  padding: 0 5px;
 }
