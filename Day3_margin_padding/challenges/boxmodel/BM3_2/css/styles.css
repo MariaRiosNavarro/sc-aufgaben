@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Frederika;
+  src: url(../assets/fonts/FrederickatheGreat-Regular.ttf);
+}
+
+h1 {
+  font-family: Frederika, Arial, Helvetica, sans-serif;
+}
+.intro-section {
+  background: url(../assets/img/Jungle.jpeg) no-repeat center;
+  background-size: cover;
+  color: white;
+  height: 811px;
+}
+
+.intro,
+.intro-title,
+.intro-description {
+  margin: auto;
+  text-align: center;
+}
+
+.intro {
+  width: 300px;
+  height: 232px;
+  margin: auto;
+}
+
+.intro-title {
+  width: 216px;
+}
+
+.description-section {
+  height: 486px;
+  text-align: center;
+}
+
+.read-more {
+  width: 143px;
+}
+
+nav ul li {
+  text-align: right;
+  bottom: 0;
+}
