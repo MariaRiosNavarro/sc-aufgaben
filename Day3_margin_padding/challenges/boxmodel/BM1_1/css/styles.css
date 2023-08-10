@@ -1,0 +1,19 @@
+/* -
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+- */
+
+p {
+  background-color: aquamarine;
+  width: 200px;
+  padding: 25px;
+  border: 25px solid black;
+  margin: 25px auto;
+  /* or we can code margin-left:auto; and margin-right:auto; */
+  /* or we can code margin: 25px auto 25px auto; */
+}
