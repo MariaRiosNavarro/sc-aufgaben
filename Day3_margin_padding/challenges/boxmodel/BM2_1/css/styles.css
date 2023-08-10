@@ -8,12 +8,11 @@ p {
   padding: 10px;
 }
 
-/* !important hover works in the p not in the letter, also musst to be before!! */
-
 p::first-letter {
   font-size: 20px;
   font-weight: bold;
 }
+/* !important :hover works in the p not in the ::first-letter, also musst to be before!! */
 
 p:hover::first-letter {
   color: red;
