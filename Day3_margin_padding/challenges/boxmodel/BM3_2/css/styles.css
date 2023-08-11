@@ -28,7 +28,8 @@ h3 {
 
 h1 {
   text-align: left;
-  padding-left: 5rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
 }
 
 section:first-of-type {
@@ -135,18 +136,22 @@ section:nth-of-type(3) {
   color: white;
   padding: 41px 0 14px 24px;
   width: 100%;
+  font-size: 16px;
+  height: 163px;
 }
 
-section:nth-of-type(3) a {
+section:nth-of-type(3) article {
+  height: 100px;
+}
+section:nth-of-type(3) article p {
+  margin-bottom: 20px;
+}
+
+section:nth-of-type(3) article a {
   border: 1px solid white;
   text-decoration: none;
   color: white;
   padding: 11px 31px;
-}
-
-section:nth-of-type(3) article {
-  font-size: 16px;
-  height: 175px;
 }
 
 /* footer */
