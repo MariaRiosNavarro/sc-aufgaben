@@ -5,3 +5,56 @@
   margin: 0;
   padding: 0;
 }
+
+div {
+  margin: 100px;
+  width: 400px;
+  height: 120px;
+  position: relative;
+}
+
+p::first-letter {
+  font-size: 24px;
+}
+
+p::before {
+  content: "";
+  background-image: url(../assets/aufrufezeichenoffen.png);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  left: -40px;
+  top: -10px;
+}
+
+h4::after {
+  content: "";
+  background-image: url(../assets/aufruffezeichenzu.png);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  right: 40px;
+  top: 120px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.dolor:hover {
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.quo:hover {
+  background-color: black;
+  color: white;
+}
+
+h4::before {
+  content: "- ";
+}
