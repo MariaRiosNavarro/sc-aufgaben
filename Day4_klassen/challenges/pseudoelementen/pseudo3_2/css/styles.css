@@ -5,3 +5,55 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: Montse;
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+/* 
+Der HTML-Code befindet sich im Kommentarbereich:
+
+Wende folgende Änderungen an:
+- Die Schüler 3, 6, 9, 12, 15, 18, 21, 24, 27 und 30 haben die Schriftfarbe #311B92 und eine Montserrat-Schriftfamilie
+? Die Schüler 5, 10, 15, 20, 25 und 30 haben die Hintergrundfarbe #FFF176
+! Die Schüler 2, 4, 6, 8, 10, 12 … 26, 28 und 30 haben eine text-decoration:underline; 
+# Die Schüler 1, 3, 5, 7, 9, 11 … 25, 27 und 29 haben ein Quadrat als Bulletpoint
+* Die Schüler 7, 14, 21 und 28 haben Schriftgröße 1.6em
+Der erste Schüler hat die Schriftfarbe #E53935
+Die Schüler 4, 8, 12, 16, 20, 24 und 28 haben ein letter-spacing von 6px
+Die Schüler 13 und 26 haben eine #FF8A80-Hintergrundfarbe
+*/
+
+li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+li:nth-child(even)::before {
+  content: "\25A0";
+}
+
+.color-lila {
+  color: #311b92;
+  font-family: Montse, Arial, Helvetica, sans-serif;
+}
+
+.bg-yellow {
+  background-color: #fff176;
+}
+
+.fontsize-l {
+  font-size: 1.6rem;
+}
+
+li:first-child {
+  color: #e53935;
+}
+
+.letter-spacing {
+  letter-spacing: 6px;
+}
+
+.bg-rosa {
+  background-color: #ff8a80;
+}
