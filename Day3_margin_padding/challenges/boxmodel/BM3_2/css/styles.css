@@ -4,13 +4,18 @@
   padding: 0;
 }
 
-html {
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
-}
-
 @font-face {
   font-family: Frederika;
   src: url(../assets/fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+html {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -19,20 +24,11 @@ h3 {
   font-family: Frederika, Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-  font-family: OpenSans;
-  src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
-}
+/* first section */
 
 h1 {
   text-align: left;
-}
-
-section:first-of-type,
-section:nth-of-type(2) {
-  margin: auto;
-  text-align: center;
-  position: relative;
+  padding-left: 5rem;
 }
 
 section:first-of-type {
@@ -66,12 +62,18 @@ section:first-of-type article div {
 section:first-of-type article div p {
   font-size: 16px;
   font-style: normal;
-  font-weight: ;
+  font-weight: 400;
   line-height: normal;
 }
 
 section:first-of-type article div a {
   width: 143px;
+  color: white;
+  display: inline-block;
+  margin: 70px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 15px;
 }
 
 nav {
@@ -88,24 +90,75 @@ nav ul li {
   margin: 10px 115px;
 }
 
-footer {
+/* second section */
+
+section:nth-of-type(2) {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 485px;
+}
+
+section:nth-of-type(2) article {
+  margin: 0 auto;
+  width: 600px;
+  height: 486px;
+  text-align: center;
+}
+section:nth-of-type(2) article h2 {
+  margin: 50px auto;
+}
+
+section:nth-of-type(2) article div {
+  width: 210px;
+  height: 118.25px;
+  border: 2px solid black;
+  text-align: center;
+  margin: 50px auto 0 auto;
+}
+
+section:nth-of-type(2) article div p {
+  display: inline-block;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px;
+}
+
+section:nth-of-type(2) article div p:first-of-type {
+  padding-top: 25px;
+}
+
+/* dritte section*/
+
+section:nth-of-type(3) {
   background-color: #3a3b4a;
   color: white;
-  padding: 24px;
+  padding: 41px 0 14px 24px;
   width: 100%;
 }
 
-footer a {
+section:nth-of-type(3) a {
   border: 1px solid white;
   text-decoration: none;
   color: white;
-  margin-top: 19px;
   padding: 11px 31px;
 }
+
+section:nth-of-type(3) article {
+  font-size: 16px;
+  height: 175px;
+}
+
+/* footer */
 
 footer ul {
   background-color: white;
   text-decoration: none;
   height: 22px;
   font-size: 16px;
+  text-align: right;
+}
+
+footer ul li {
+  display: inline-block;
 }
