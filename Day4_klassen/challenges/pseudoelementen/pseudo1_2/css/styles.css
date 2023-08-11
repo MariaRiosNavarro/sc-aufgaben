@@ -1,7 +1,73 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; */
+  font-family: Montse, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* Benutze diese Farben: #a020f0, #00bfff, #32cd32, #c71585, #00ced1, #483d8b, #2e8b57.
+Benutze diese Befehle: ::first-line, ::first-letter, ::before, ::after, ::selection */
+
+@font-face {
+  font-family: Montse;
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+h3::first-letter {
+  color: #2e8b57;
+}
+
+ul li {
+  font-size: 12px;
+}
+
+section p:nth-of-type(odd) {
+  font-size: 12px;
+}
+
+section p:first-of-type {
+  text-indent: 40px;
+}
+
+section p:first-of-type::first-line {
+  font-size: 16px;
+}
+
+.overline::first-letter {
+  text-decoration: overline #00bfff;
+}
+.underline::first-letter {
+  text-decoration: underline #a020f0;
+}
+.blue-first-letter::first-letter {
+  color: #00bfff;
+}
+.red-first-letter::first-letter {
+  color: #a020f0;
+}
+.green-first-letter::first-letter {
+  color: #32cd32;
+  text-decoration: line-through #32cd32;
+}
+
+.line-through-first-line::first-line {
+  text-decoration: line-through;
+}
+
+.first-letter-overline-black::first-letter {
+  text-decoration: overline;
+}
+
+p:hover::first-line {
+  color: #00bfff;
+}
+
+.green-first-line::first-line {
+  color: #483d8b;
+}
+.red-first-letter::first-letter {
+  color: #c71585;
 }
