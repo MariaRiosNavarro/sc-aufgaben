@@ -5,3 +5,24 @@
   margin: 0;
   padding: 0;
 }
+
+p {
+  border: 3px solid #ffcc00;
+  margin: 0;
+}
+
+p::before {
+  content: "Info";
+  background-color: #ffcc00;
+  font-weight: bolder;
+}
+
+a::after {
+  content: "\2665";
+}
+
+*::selection {
+  color: red;
+  background-color: #ffcc00;
+  text-decoration: underline;
+}
