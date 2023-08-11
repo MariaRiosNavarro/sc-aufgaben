@@ -1,7 +1,85 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+} */
+
+/* ! mit dem Pseudo Element first-letter kann man den ersten buchstaben stylen */
+
+section p::first-letter {
+  font-size: 50px;
+  background-color: red;
+  text-decoration: underline;
+}
+
+/* !mit first line wird immer die erste zeile gestylt */
+
+section p::first-line {
+  background-color: blue;
+  color: white;
+}
+
+/* ! wir können das auch kombinieren */
+
+/* keine gut practice, nicht übersichlich, besser eine klasse */
+section p:last-of-type::first-line {
+  background-color: brown;
+}
+/* !Damit kann ich in einer Liste das symbol vorne ändern (geht noch bei listen) */
+article li::marker {
+  content: "☑️ ";
+}
+
+/* wenn der user was selektiert */
+*::selection {
+  background-color: rgb(150, 150, 168);
+  color: blue;
+}
+
+/* ! after */
+
+article h4:nth-of-type(1)::after {
+  content: " -AFTER und Before NICHT für wichtige Sachen benutzen 🤡, zahlt nicht für Google";
+  color: red;
+}
+
+article h4:nth-of-type(2)::before {
+  content: "genau so wie after, ich kann die nicht bearbeiten oder was machen 👹, NUR für ICONS oder kleinigkeiten -";
+  color: orange;
+}
+
+/* ! eine Klasse wird immer mit einem . davor angesprochen */
+
+.class-guay {
+  background-color: aquamarine;
+}
+
+.class-geil {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* ! id werden mit # angesprochen, hat mehr macht als die Klassen*/
+
+#relevante-name {
+  color: orange;
+}
+
+/* selektorspezifität gibt viel macht und manchmmal kann man nicht überschriben   */
+
+article a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: inline-block;
+  transition: 1s;
+}
+
+.btn:hover {
+  background-color: red;
 }
