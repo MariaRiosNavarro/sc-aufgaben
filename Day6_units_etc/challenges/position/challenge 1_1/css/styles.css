@@ -5,3 +5,33 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62, 5%;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+  background: url(./../assets/everest.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+main {
+  padding-top: 6rem;
+  padding-right: 6rem;
+  text-align: right;
+  color: antiquewhite;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  width: fit-content;
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  padding-top: 0.5rem;
+}
