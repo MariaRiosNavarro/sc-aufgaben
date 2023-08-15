@@ -5,3 +5,29 @@
   margin: 0;
   padding: 0;
 }
+
+.absolute-box {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+/* relative (bezieht auf das eltern element)*/
+
+.relative-box {
+  width: 50%;
+  background-color: red;
+}
+
+.img {
+  width: 50%;
+  display: block;
+}
+
+/* vp (bezieht auf das screen)-sinnvolle für responsives design*/
+
+.vp-box {
+  width: 20vw;
+  height: 30vh;
+  background-color: brown;
+}
