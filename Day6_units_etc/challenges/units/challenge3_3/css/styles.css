@@ -100,11 +100,13 @@ ul {
   text-align: right;
 }
 
+ul li {
+  margin: 1rem 1.4rem;
+}
 .nav-link {
   color: #8c8c8c;
   text-decoration: none;
   font-family: Maven, Arial, Helvetica, sans-serif;
-  padding: 0.3rem;
 }
 
 .nav-link:hover {
