@@ -143,6 +143,42 @@ img {
   font-family: Maven, Arial, Helvetica, sans-serif;
 }
 
+/* #project section */
+
+.project-section {
+  margin-top: 14rem;
+}
+
+.project-section article {
+  width: 100%;
+  text-align: center;
+}
+
+.project-section article img,
+.project-description {
+  margin: 0 auto;
+  width: 45vw;
+}
+
+.project-description {
+  text-align: left;
+}
+
+.project-description h5 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 2.2rem;
+  margin-bottom: 0.7rem;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.project-description p {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
+}
 /* body {
   background: url() no-repeat center;
   background-size: cover;
