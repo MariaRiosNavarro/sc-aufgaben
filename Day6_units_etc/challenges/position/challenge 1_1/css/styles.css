@@ -19,6 +19,7 @@ body {
   background: url(./../assets/everest.jpg) no-repeat center;
   background-size: cover;
   min-height: 400px;
+  height: 100vh;
 }
 
 main {
@@ -35,3 +36,5 @@ main {
 h2 {
   padding-top: 0.5rem;
 }
+
+/* Version with position, body position relativ and main position absolute the padding values are the Top and Right in position absolute */
