@@ -5,3 +5,60 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: PlayFair;
+  src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+html {
+  font-size: 62, 5%;
+  background-color: #edf0e2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  width: 40%;
+  display: inline-block;
+  margin-left: 9rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: PlayFair, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  padding-top: 0.8rem;
+  font-size: 0.9rem;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin-top: 2.6rem;
+  background-color: #ffaa36;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article:last-of-type {
+  width: 50%;
+  display: inline-block;
+}
+
+img {
+  margin-left: 2rem;
+}
