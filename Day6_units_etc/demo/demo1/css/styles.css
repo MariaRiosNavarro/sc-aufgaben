@@ -31,13 +31,13 @@ img {
   height: 30vh;
   background-color: brown;
 }
-/* rem:schriftgroße des elternselement */
+/* rem:schriftgroße des rootelement */
 /* em: schriftgroße des übergeordete selement */
-.html {
-  /* font-size: 16px; */
-  font-size: 62.5%;
-  /* standard wert */
-}
+/* .html { */
+/* font-size: 16px; */
+/* font-size: 62.5%; */
+/* standard wert */
+/* } */
 
 .normal {
   font-size: 16px;
@@ -55,4 +55,22 @@ img {
   font-size: 1.7rem;
 }
 
+/* !Clamp() */
 
+.content {
+  padding: 10px;
+  width: 80%;
+  background-color: yellow;
+}
+
+/* Mit clamp skalieren die scrift. Aber wenn ein absoluter Wert gewunsch wird, muss man absoluter werte. Clamp ist advance und ist nicht sehr bekannt */
+/* clamp , min, optimale, max*/
+
+.title {
+  color: blue;
+  font-size: clamp(1rem, 4vw, 5rem);
+}
+
+span {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
