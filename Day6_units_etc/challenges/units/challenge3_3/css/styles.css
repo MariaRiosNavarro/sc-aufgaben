@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Gilda;
+  src: url(../assets/fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: Maven;
+  src: url(../assets/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Maven-Bold;
+  src: url(../assets/fonts/Maven_Pro/static/MavenPro-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* !header */
+
+header {
+  /* height: 30%; */
+  background-color: #333333;
+}
+
+/* # header logo */
+
+h1 {
+  color: #949494;
+  padding: 15px 0 0 20px;
+  font-size: 1.1rem;
+  font-family: Maven-Bold, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+
+.second-line {
+  text-indent: 3px;
+  display: block;
+}
+
+/*  # header intro */
+
+.header-article {
+  margin: 7rem auto 1.8rem auto;
+  height: 14rem;
+  width: 18rem;
+  border-radius: 8px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 255, 0.47) 20%,
+    rgba(39, 39, 240, 0.88) 50%,
+    #48cefa 100%
+  );
+  text-align: center;
+  color: #fff;
+}
+
+.header-article:hover {
+  background: linear-gradient(
+    225deg,
+    rgba(255, 0, 255, 0.47) 20%,
+    rgba(39, 39, 240, 0.88) 50%,
+    #48cefa 100%
+  );
+}
+
+.header-article h2 {
+  font-size: 3rem;
+  padding-bottom: 1.6rem;
+  font-family: Gilda, Arial, Helvetica, sans-serif;
+}
+
+.header-article p {
+  font-size: 1rem;
+  padding: 1rem 1rem 1rem 1.25rem;
+  font-family: Maven, Arial, Helvetica, sans-serif;
+}
+
+/* # header nav */
+
+header nav {
+  text-align: right;
+
+  padding-bottom: 10rem;
+}
+
+ul {
+  color: #8c8c8c;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-link {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-family: Maven, Arial, Helvetica, sans-serif;
+  padding: 0.3rem;
+}
+
+.nav-link:hover {
+  text-shadow: -1px 1px 8px #fff;
+  color: #c9c4c4;
+}
+
+/* project section */
+
+main {
+  margin-top: 18rem;
+}
+
+img {
+  width: 54%;
+}
+
+.main-section {
+  position: relative;
+  width: 47rem;
+  padding: 3rem;
+}
+
+.main-section h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 12rem;
+}
+
+.main-section p {
+  padding-top: 3.5rem;
+  font-size: 1rem;
+  font-family: Maven, Arial, Helvetica, sans-serif;
+}
+
+/* body {
+  background: url() no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+} */
