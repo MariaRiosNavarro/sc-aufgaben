@@ -31,3 +31,28 @@ img {
   height: 30vh;
   background-color: brown;
 }
+/* rem:schriftgroße des elternselement */
+/* em: schriftgroße des übergeordete selement */
+.html {
+  /* font-size: 16px; */
+  font-size: 62.5%;
+  /* standard wert */
+}
+
+.normal {
+  font-size: 16px;
+}
+
+/* Schriftgroße: 1.5 x Elternelement (16px) = 24px */
+
+/* rem und em mit container ist nicht good practice, nur für schriftgroßen */
+
+.big {
+  font-size: 1.5em;
+}
+
+.bigger {
+  font-size: 1.7rem;
+}
+
+
