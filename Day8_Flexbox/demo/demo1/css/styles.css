@@ -83,3 +83,29 @@ h1 {
   color: darkgreen;
 }
 
+/* !flex wrap */
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2vw;
+  column-gap: 4vw;
+  flex-wrap: wrap;
+}
+
+.box article {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.box h3 {
+  background-color: aqua;
+}
