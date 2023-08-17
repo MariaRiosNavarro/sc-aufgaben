@@ -11,7 +11,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  /* column-gap: 1vh;*/
   row-gap: 1vw;
   justify-content: space-around;
 }
