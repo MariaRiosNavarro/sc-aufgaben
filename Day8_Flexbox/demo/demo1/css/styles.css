@@ -14,25 +14,72 @@ a {
   text-decoration: none;
 }
 
-/* General */
+/* ** General */
 
 header {
   margin: 20px 40px 60px 40px;
 }
 
+nav {
+  display: flex;
+  align-items: center; /** vertical in der Y achse*/
+  justify-content: space-between; /** horizontal Ausrichtung: die verfügbare Platz wird gleichmäßig zwiesschen den Elementen verteilt*/
+  /* justify-content: space-around; /**horizontal Ausrichtung: die verfügbare Platz wird gleichmäßig zwiesschen den Elementen verteilt, ohne Amfang und Ende */
+  /* justify-content: space-evenly; /**horizontal Ausrichtung: die verfügbare Platz wird gleichmäßig zwiesschen den Elementen verteilt */
+  /* justify-content: flex-start;/**horizontal Ausrichtung: am Amfang, default */
+  /* justify-content: end; */ /**horizontal Ausrichtung: am Ende des Containers */
+}
+
 h2 {
   color: green;
   font-size: 30px;
-  margin-left: 20px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 nav section a {
   padding: 15px;
   color: black;
 }
+
+/* !flex aling-item */
+
+main {
+  margin: 0 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.graffiti {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: start; /*vertical in der mitte*/
+  gap: 1vw;
+}
+
+.graffiti img {
+  max-width: 50vw;
+}
+
+/* !flex align-item/ Baseline */
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*  ! Flex-direction  */
+
+.categorie {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.categorie a {
+  padding: 10px;
+  color: darkgreen;
+}
+
