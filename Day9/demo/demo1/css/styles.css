@@ -1,3 +1,8 @@
+@font-face {
+  font-family: lato;
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -5,3 +10,66 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --color-grey: #222121;
+  --color-black: #000000;
+  --bg-color: #d9e8e5;
+  --bg-color-white: #ffff;
+  --fz: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: lato, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------Header---------- */
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  margin-left: 2rem;
+  font-size: 3rem;
+  color: var(--color-grey);
+}
+
+.logo img {
+  width: 3rem;
+}
+.logo h1 {
+  font-weight: 400;
+  padding-left: 0.1em;
+}
+
+nav {
+  background-color: var(--bg-color-white);
+  padding: 1em 4em;
+  display: flex;
+  align-items: baseline;
+}
+
+nav ul {
+  display: flex;
+  flex: auto;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+nav a {
+  color: var(--color-black);
+  padding: 0 1.2rem;
+}
+
+/* --------------main-------------- */
+/* version mit background statt image */
