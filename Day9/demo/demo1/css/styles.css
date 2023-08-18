@@ -73,3 +73,51 @@ nav a {
 
 /* --------------main-------------- */
 /* version mit background statt image */
+
+main {
+  background-color: var(--bg-color);
+  padding: 10rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  margin: 0 0 2vw 3rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.one {
+  background: url("../assets/img/ring001.png");
+}
+.two {
+  background: url("../assets/img/ring002.png");
+}
+.three {
+  background: url("../assets/img/ring001.png");
+}
+.four {
+  background: url("../assets/img/ring001.png");
+}
+.five {
+  background: url("../assets/img/ring001.png");
+}
+.six {
+  background: url("../assets/img/ring001.png");
+}
+
+.ring-bg {
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+  padding: 0 2rem 1rem 0;
+}
