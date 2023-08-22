@@ -5,3 +5,50 @@
   margin: 0;
   padding: 0;
 }
+
+.center-form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 25%;
+  min-width: 100px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  background-color: rgb(233, 226, 226);
+}
+
+h2,
+button {
+  text-align: center;
+  background-color: rgb(55, 194, 147);
+  font-size: small;
+  padding: 0.5rem;
+  color: white;
+}
+
+h2 {
+  width: 25%;
+}
+button {
+  width: 100%;
+  border: none;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid rgb(215, 208, 208);
+  color: rgb(175, 172, 172);
+}
+
+button:hover {
+  background-color: rgb(37, 136, 103);
+}
