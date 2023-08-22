@@ -3,7 +3,7 @@
 //   let output = document.querySelector(".output");
 //   output.innerHTML = `ich fühle mich wie ein ${range}`;
 // }
-// main.js
+
 
 // Event listener, der ausgelöst wird, wenn sich der Wert des Bereichs ändert
 document.addEventListener("DOMContentLoaded", function () {
