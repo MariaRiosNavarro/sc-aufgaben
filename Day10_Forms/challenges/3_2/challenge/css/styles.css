@@ -24,6 +24,10 @@ a {
   justify-content: space-between;
 }
 
+.container {
+  width: 50%;
+}
+
 button {
   margin-top: 10px;
 }
