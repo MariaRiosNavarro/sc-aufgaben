@@ -5,3 +5,28 @@
   margin: 0;
   padding: 0;
 }
+
+legend {
+  padding-bottom: 0.5rem;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+form {
+  margin: 0.5rem;
+}
+
+section,
+button {
+  padding: 0 0.5rem;
+}
+
+.user {
+  padding-bottom: 0.3rem;
+}
+
+.btn-container {
+  padding-bottom: 0.5rem;
+}
