@@ -11,8 +11,9 @@
     <fieldset>
       <legend>Register form</legend> 
       <!-- #section name -->
-      <section class="name">
+      <section class="name justify">
         <label for="name">Name:</label>
+        <div class="justify-container">
         <input
           type="text"
           name="name"
@@ -20,10 +21,13 @@
           placeholder="Name"
          
         />
+      </div>
+
       </section>
        <!-- #section surname -->
-      <section class="surname">
+      <section class="surname justify">
         <label for="surname">Surname:</label>
+        <div class="justify-container">
         <input
           type="text"
           name="surname"
@@ -31,41 +35,52 @@
           placeholder="Surname"
          
         />
+      </div>
       </section>
       <!-- #section email -->
-      <section class="email">
+      <section class="email justify">
         <label for="email">Email</label>
+        <div class="justify-container">
         <input type="email" name="email" id="email" placeholder="Email"></input>
+      </div>
       </section>
       <!-- #section gender -->
-      <section class="gender">
-        <div>
-          <label for="male">Male</label>
-          <input type="radio" name="male" id="male" checked></div>
-        <div>
-          <label for="female">Female</label>
-          <input type="radio" name="female" id="female"></div>
-        <div>
-          <label for="divers">Divers</label>
-          <input type="radio" name="divers" id="divers"></div>
+      <section class="gender justify">
+        <legend>Gender</legend>
+       <div class="justify-container gender-container">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+      
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+      
+        <label for="divers">Divers</label>
+        <input type="radio" name="gender" id="divers">
+      </div>
+
       </section>
       <!-- #section pic -->
-      <section class="picture">
+      <section class="picture justify">
           <label for="picture">Picture</label>
+          <div class="justify-container">
           <input type="file" name="picture" id="picture"></div>
-      </section>
+        </div>
+        </section>
       <!-- #section country -->
-      <section class="country">
+      <section class="country justify">
           <label for="country">Country</label>
+          <div class="justify-container">
           <select name="country" id="country">
             <option value="germany">Germany</option>
             <option value="france">France</option>
             <option value="usa">USA</option>
           </select>
+        </div>
       </section>
       <!-- #section language-->
-      <section class="language">
+      <section class="language justify">
           <legend>Preferred Languages</legend>
+          <div class="justify-container">
           <div class="language-box">
             <input type="checkbox" name="language" id="html" value="HTML">
             <label for="html">HTML</label>
@@ -78,20 +93,25 @@
             <input type="checkbox" name="language" id="angular" value="angular">
             <label for="react">Angular</label>
           </div>
-        <h6 class="note">(To choose more than one use cmd key)</h6>
+          <div class="note-container">
+            <h6 class="note">(To choose more than one use cmd key)</h6>
+          </div>
+          
       </section>
+      
       <!-- #section field -->
-      <section class="field">
+      <section class="field justify">
             <legend>Field of activity</legend> 
-            <input type="checkbox" name="field" id="it"><label for="it">It</label>
-            <input type="checkbox" name="field" id="design"><label for="design">Design</label>
-            <input type="checkbox" name="field" id="other"><label for="other">Other</label>
-
+            <div class="justify-container field">
+            <input class="field-input" type="checkbox" name="field" id="it"><label for="it">It</label>
+            <input class="field-input" type="checkbox" name="field" id="design"><label for="design">Design</label>
+            <input class="field-input" type="checkbox" name="field" id="other"><label for="other">Other</label>
+          </div>
       </section>
        <!-- #section btn -->
       <section class="btn-container">
       <button type="submit">Send</button>
-      <button type="button">Cancel</button>
+      <button type="cancel">Cancel</button>
       </section>
 
     </fieldset>
