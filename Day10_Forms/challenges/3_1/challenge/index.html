@@ -6,5 +6,48 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <header>
+        <h2>Sign Up Now!</h2>
+        <p>Sign up and tell us what you think of the site</p>
+      </header>
+      <form action="">
+        <fieldset class="name-adress">
+          <legend>First Name & Adress</legend>
+          <section>
+            <label for="name">Your Full Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="adress">Adress</label>
+            <input type="text" name="adress" id="adress" />
+          </section>
+        </fieldset>
+        <fieldset class="email-phone">
+          <legend>Email & Phone</legend>
+          <section>
+            <label for="email">Email Adress</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" />
+          </section>
+        </fieldset>
+        <fieldset class="password">
+          <legend>First Name & Adress</legend>
+          <section>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <label for="password">Confirm Password</label>
+            <input type="password" name="password" id="password" />
+          </section>
+        </fieldset>
+        <section class="end-section">
+          <button type="submit">Send</button>
+          <div class="policy">
+            <input type="checkbox" name="policy" id="policy" required />
+            <label for="policy">You agree to our Terms and Policy</label>
+          </div>
+        </section>
+      </form>
+    </div>
+  </body>
 </html>
