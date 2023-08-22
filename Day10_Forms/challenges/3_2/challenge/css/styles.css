@@ -8,11 +8,19 @@
 
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.container {
+  width: 50%;
+  background-color: rgb(83, 88, 83);
+  padding: 1rem;
 }
 
 a {
   text-decoration: none;
-  background-color: black;
   color: white;
   width: 100%;
   text-align: center;
@@ -24,10 +32,6 @@ a {
   justify-content: space-between;
 }
 
-.container {
-  width: 50%;
-}
-
-button {
+input button {
   margin-top: 10px;
 }
