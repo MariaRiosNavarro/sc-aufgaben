@@ -26,3 +26,11 @@ section {
   padding: 0.5rem;
   border-radius: 8px;
 }
+
+/* style range */
+/*  !option +5 = [] */
+
+input[type="range"] {
+  margin-top: 10px;
+  cursor: pointer;
+}
