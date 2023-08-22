@@ -5,3 +5,25 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 10px;
+}
