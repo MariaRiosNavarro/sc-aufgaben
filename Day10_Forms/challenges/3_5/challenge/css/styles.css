@@ -5,3 +5,126 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62, 5%;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url("../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+main {
+  display: flex;
+  width: 80%;
+  background-color: gray;
+  padding: 2rem;
+}
+
+section {
+  width: 50%;
+  height: 35rem;
+  background-color: white;
+}
+
+.intro-foto-section {
+  background: url("../assets/img/schuhe.png") no-repeat center;
+  background-size: cover;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 4rem;
+}
+
+header {
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  font-family: Playfair, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header h2 {
+  padding-top: 1.5rem;
+  color: #000;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  color: #000;
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6.4px;
+}
+
+.message {
+  text-align: center;
+  padding: 0.3rem 2rem;
+  color: #000;
+  text-align: center;
+  font-family: Playfair, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  margin-top: 3rem;
+  background-color: black;
+  color: white;
+  width: 50%;
+  font-size: small;
+  padding: 0.3rem 2rem;
+
+  text-align: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
