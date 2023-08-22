@@ -77,6 +77,11 @@ input {
   border-radius: 3px;
 }
 
+input::placeholder {
+  color: rgb(241, 238, 238);
+  font-weight: lighter;
+}
+
 button {
   width: 100%;
   position: absolute;
