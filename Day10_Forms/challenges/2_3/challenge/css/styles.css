@@ -17,12 +17,6 @@ fieldset {
   padding: 1rem;
 }
 
-/* gender section */
-
-.gender-container label {
-  margin: 0 0.3rem;
-}
-
 /* all section */
 .justify {
   display: flex;
@@ -34,6 +28,12 @@ fieldset {
 .justify-container {
   display: flex;
   width: 70%;
+}
+
+/* gender section */
+
+.gender-container label {
+  margin: 0 0.3rem;
 }
 
 /* language section */
