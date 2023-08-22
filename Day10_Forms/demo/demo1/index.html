@@ -63,20 +63,20 @@
           <!-- Checkbox & select -->
           <section class="checkbox"><h2>Mein Koffer</h2>
           <div>
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">Trinken</label>
+            <input type="checkbox" name="" id="checkbox-trinken">
+            <label for="checkbox-trinken">Trinken</label>
           </div>
           <div>
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">Essen</label>
+            <input type="checkbox" name="" id="checkbox-essen">
+            <label for="checkbox-essen">Essen</label>
           </div>
           <div>
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">Klamoten</label>
+            <input type="checkbox" name="" id="checkbox-klamoten">
+            <label for="checkbox-klamoten">Klamoten</label>
           </div>
           <div>
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">Trinken</label>
+            <input type="checkbox" name="" id="checkbox-schlafen">
+            <label for="checkbox-schlafen">schlafen</label>
           </div>
           </section>
 
@@ -101,9 +101,8 @@
         <section class="range">
           <div>
             <label for="feeling">Gefühl: </label>
-            <input onChange="feeling()" type="range" name="feeling" id="feeling" min="1" max="10">
-          </div>
-          <div class="output"></div>
+            <input onchange="feeling()" type="range" id="feelings" min="1" max="10">
+            <div class="output"></div>
         </section>
         <!-- textarea &file -->
         <section>
