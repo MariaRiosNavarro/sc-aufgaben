@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Label & Input</legend>
+        <!-- * Attribute: placeholder, disable, required -->
+        <section class="text">
+          <label for="text">Name:</label>
+          <!-- "for" in label with the same name of the input -->
+          <input
+            type="text"
+            name="text"
+            id=""
+            placeholder="schreibt dein Name"
+            required
+          />
+        </section>
+        <!-- required macht das pflicht -->
+        <!-- # disable ist um den feld zu Deactivieren -->
+
+        <section class="number">
+          <label for="number">Gibt ein Nummer</label>
+          <input type="number" name="number" id="" placeholder="eine nummer" />
+        </section>
+        <!-- type:number werden wir häufig in JS nutzen -->
+        <section class="tel">
+          <label for="tel">Gibt ein Telefon Nummer</label>
+          <input type="tel" name="tel" id="" placeholder="gibt deine Nummer" />
+        </section>
+        <section class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="" placeholder="Email"></input>
+        </section>
+        <section class="password">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="" placeholder="min 8 Zeichen">
+        </section>
+        <!--!-------------- Radio -->
+        <!-- Atribut: checked -->
+        <!-- # label for mit den gleiche ID!! -->
+        <section>
+          <div>
+            <label for="id-ja">Ja</label>
+            <input type="radio" name="auswahl" id="id-ja" checked></div>
+          <div>
+            <label for="id-nein">Nein</label>
+            <input type="radio" name="auswahl" id="id-nein"></div>
+          <div>
+            <label for="id-ka">Keine Antwort</label>
+            <input type="radio" name="auswahl" id="id-ka"></div>
+          </section>
+
+          <!-- Checkbox & select -->
+          <section class="checkbox"><h2>Mein Koffer</h2>
+          <div>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Trinken</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Essen</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Klamoten</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Trinken</label>
+          </div>
+          </section>
+
+          <section><h2>meine Reiseziele</h2>
+          <select name="" id="">
+            <option value="">Wahle aus..</option>
+            <option value="HR">Hamburg</option>
+            <option value="Pisa">Pisa</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Rom">Rom</option>
+            <option value="Berlin">Berlin</option>
+          </select>
+          <!-- value könnte auch country für alle sein aber dannach für JS wird wichtig sein ausagekräftige value zu geben -->
+        </section>
+        <section class="date">
+          <div>
+            <label for="date"> Datum: </label>
+            <input type="date" name="date" id="date">
+          </div>
+        </section>
+        <!-- Range -->
+        <section class="range">
+          <div>
+            <label for="feeling"></label>
+            <input onChange="feeling()" type="range" name="feeling" id="feeling" min="1" max="10">
+          </div>
+          <div class="output"></div>
+        </section>
+
+      </fieldset>
+    </form>
+    <script src="./main.js"></script>
+  </body>
 </html>
