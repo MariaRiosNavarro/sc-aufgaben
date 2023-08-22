@@ -33,7 +33,7 @@ body {
   text-align: center;
   font-size: 1rem;
   font-weight: 200;
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .tab {
@@ -44,6 +44,11 @@ body {
   transition: background-color 0.3s;
   padding: 0.5rem;
   font-size: small;
+  border-radius: 3px;
+}
+
+.tab:hover {
+  background-color: rgb(5, 151, 5);
 }
 
 .tab-activ {
@@ -60,10 +65,16 @@ form {
   display: flex;
   position: relative;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 input {
   width: 100%;
+  padding: 0.4rem;
+  box-shadow: 1px 1px 1px white;
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
 }
 
 button {
@@ -74,4 +85,19 @@ button {
   padding: 0.5rem;
   color: white;
   border: none;
+  border-radius: 3px;
+}
+
+/* only for Login */
+
+.forgot {
+  position: absolute;
+  color: var(--primary-color);
+  top: 8rem;
+  right: 0;
+  font-size: small;
+}
+
+#login form {
+  position: relative;
 }
