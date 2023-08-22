@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+html {
+  font-family: Arial;
+}
+
+:root {
+  --primary-color: #43d1af;
+  --hover-color: #2ebc99;
+}
+
 .center-form {
   margin-top: 5rem;
   display: flex;
@@ -27,7 +36,7 @@ form {
 h2,
 button {
   text-align: center;
-  background-color: rgb(55, 194, 147);
+  background-color: var(--primary-color);
   font-size: small;
   padding: 0.5rem;
   color: white;
@@ -39,6 +48,7 @@ h2 {
 button {
   width: 100%;
   border: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 input,
@@ -50,5 +60,5 @@ textarea {
 }
 
 button:hover {
-  background-color: rgb(37, 136, 103);
+  background-color: var(--hover-color);
 }
