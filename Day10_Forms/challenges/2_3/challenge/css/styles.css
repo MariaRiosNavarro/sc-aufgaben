@@ -5,3 +5,37 @@
   margin: 0;
   padding: 0;
 }
+
+/* language section */
+.language {
+  display: flex;
+}
+
+.language-box {
+  border: 1px solid #ccc;
+  max-height: 100px;
+  width: 180px;
+  overflow-y: scroll;
+  padding: 0.2rem;
+  margin-bottom: 10px;
+}
+
+.language-box label {
+  display: block;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-box label:hover {
+  background-color: #f0f0f0;
+}
+
+.language-box input {
+  display: none;
+}
+
+.language-box input:checked + label {
+  background-color: #007bff;
+  color: white;
+}
