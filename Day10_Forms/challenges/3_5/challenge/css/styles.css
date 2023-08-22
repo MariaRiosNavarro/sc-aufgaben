@@ -128,3 +128,13 @@ button {
   line-height: normal;
   letter-spacing: 3.2px;
 }
+
+/* aparence of message */
+
+.message {
+  display: none;
+}
+
+.show-message {
+  display: block;
+}
