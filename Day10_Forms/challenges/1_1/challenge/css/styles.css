@@ -5,3 +5,53 @@
   margin: 0;
   padding: 0;
 }
+
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 5rem;
+  width: 35%;
+  min-width: 500px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.name-container {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.name-container input {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(24, 92, 93);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+}
+
+textarea:hover{
+  
+}
+
+.name label::after,
+.email label::after,
+.nachricht label::after {
+  content: "*";
+  color: red;
+}
