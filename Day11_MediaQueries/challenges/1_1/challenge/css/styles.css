@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 2vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  row-gap: 1vw;
+  justify-content: space-around;
+}
+
+section {
+  width: 30vw;
+  height: 30vh;
+}
+
+.baume {
+  background: url(../assets/img/baume.jpg) no-repeat center;
+  background-size: cover;
+}
+.berge {
+  background: url(../assets/img/berge.jpg) no-repeat center;
+  background-size: cover;
+}
+.decke {
+  background: url(../assets/img/decke.jpg) no-repeat center;
+  background-size: cover;
+}
+.gebaeude {
+  background: url(../assets/img/gebaeude.jpg) no-repeat center;
+  background-size: cover;
+}
+.land {
+  background: url(../assets/img/land.jpg) no-repeat center;
+  background-size: cover;
+}
+.nass {
+  background: url(../assets/img/nass.jpg) no-repeat center;
+  background-size: cover;
+}
+.schuhe {
+  background: url(../assets/img/schuhe.jpg) no-repeat center;
+  background-size: cover;
+}
+.stadt {
+  background: url(../assets/img/stadt.jpg) no-repeat center;
+  background-size: cover;
+}
+.berge2 {
+  background: url(../assets/img/berge2.jpg) no-repeat center;
+  background-size: cover;
+}
+.station {
+  background: url(../assets/img/station.jpg) no-repeat center;
+  background-size: cover;
+}
+.wolken {
+  background: url(../assets/img/wolken.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.bergen3 {
+  background: url(../assets/img/bergen3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+  section {
+    width: 48vw;
+    height: 48vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    width: 90vw;
+    height: 50vh;
+  }
+}
