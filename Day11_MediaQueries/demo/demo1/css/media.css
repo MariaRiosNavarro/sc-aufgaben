@@ -1,0 +1,53 @@
+/* ----------- MEDIA QUERIES ----------- */
+
+/* ? Smartphone ab 576px */
+/* ? Tablet ab 768px */
+/* ? Desktop ab 992px */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .overflow {
+    color: rgb(136, 255, 0);
+    flex-direction: column;
+    padding: 30px 40px;
+    background-color: rgb(191, 0, 255);
+  }
+  .overflow div {
+    width: auto;
+  }
+  .blaubeere {
+    display: none;
+  }
+  .himbeere {
+    display: block;
+    max-width: 100vw;
+  }
+  header .burger-wrapper {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .overflow {
+    background-color: aquamarine;
+  }
+}
+
+/* ! ------- MOBILE FIRST ------- */
+
+/* *  Dies dient dazu um sicherzustellen , dass das Layout nicht zu früh in größere Ansichten wechselt
+* und das die Inhalte immer noch effektiv genutzt werden könne, wenn der Bildschirm größer wird*/
+
+/* @media only screen and (min-width: 576px){
+    .overflow{
+        background-color: aquamarine;
+    }
+} */
