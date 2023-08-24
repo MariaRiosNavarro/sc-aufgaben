@@ -60,3 +60,20 @@ li:hover div {
   bottom: 0;
   opacity: 1;
 }
+
+/* Nutze für "Medium devices (tablets, 768px and up)": @media (max-width: 768px) { ... }
+Nutze für "Small devices" (landscape phones, 576px and up)": @media (max-width: 576px) { ... } */
+
+@media screen and (max-width: 768px) {
+  .pics-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pics-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
