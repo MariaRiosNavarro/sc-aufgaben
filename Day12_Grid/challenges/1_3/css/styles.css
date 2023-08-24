@@ -5,3 +5,38 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 20px 20px 1fr 1fr 1fr 1fr 20px 20px;
+  gap: 3px;
+  color: aliceblue;
+}
+
+header {
+  grid-column: 1/-1;
+  grid-row: 1 / span 2;
+  background-color: blue;
+}
+
+aside {
+  grid-column: 1 / span 2;
+  grid-row: 3/7;
+  background-color: green;
+}
+
+footer {
+  grid-column: 1/-1;
+  grid-row: 7 / span 2;
+  background-color: blueviolet;
+}
+
+main {
+  grid-column: 3/9;
+  grid-row: 3/7;
+  background-color: red;
+}
