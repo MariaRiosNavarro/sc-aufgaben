@@ -5,3 +5,62 @@
   margin: 0;
   padding: 0;
 }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(234, 232, 232);
+  padding: 100px 200px 100px 100px;
+}
+
+article {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+.ball1 {
+  animation-delay: 0s;
+}
+
+.ball2 {
+  animation-delay: 1s;
+}
+
+.ball3 {
+  animation-delay: 2s;
+}
+
+.ball4 {
+  animation-delay: 3s;
+}
+
+@keyframes circle {
+  0%,
+  100% {
+    background-color: red;
+    transform: translateX(0);
+  }
+
+  25% {
+    background-color: yellow;
+    transform: translate(300px, 0);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(300px, 300px);
+    border: none;
+  }
+
+  75% {
+    background-color: blue;
+    transform: translate(0, 300px);
+  }
+}
