@@ -70,7 +70,7 @@ article {
   transition: transform 500ms ease-in-out;
 }
 .box6:hover {
-  transform: skew(30deg, 30deg);
+  transform: skew(20deg, 20deg);
 }
 
 /* The skew() method skews an element along the X and Y-axis by the given angles.
