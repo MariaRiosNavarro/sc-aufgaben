@@ -5,3 +5,50 @@
   margin: 0;
   padding: 0;
 }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(234, 232, 232);
+  padding: 100px 200px 100px 100px;
+}
+
+article {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+
+article:hover {
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  0%,
+  100% {
+    background-color: red;
+    transform: translateX(0);
+  }
+
+  25% {
+    background-color: yellow;
+    transform: translate(300px, 0);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(300px, 300px);
+    border: none;
+  }
+
+  75% {
+    background-color: blue;
+    transform: translate(0, 300px);
+  }
+}
