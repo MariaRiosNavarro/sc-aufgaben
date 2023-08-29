@@ -5,3 +5,29 @@
   margin: 0;
   padding: 0;
 }
+
+section {
+  position: relative;
+  padding: 200px;
+  width: 100vh;
+  height: 100vh;
+}
+
+article {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(241, 200, 206);
+  border-radius: 8px;
+  /* border-top: 2px solid red; */
+  position: absolute;
+  transition: all 2s ease-in-out;
+}
+
+article:hover {
+  transform: rotate(90deg) scale(1.2);
+  transform-origin: 10% 55%;
+}
+
+/* transform origin default:  value:	50% 50% 0
+help in:
+https://www.w3schools.com/cssref/trycss3_transform-origin_inuse.htm */
