@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: lightgray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+article div {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 304px;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.8s ease-in-out;
+}
+
+/* !Aktivierung der div durch hover über den article */
+
+article:hover div {
+  bottom: 0;
+  opacity: 1;
+}
