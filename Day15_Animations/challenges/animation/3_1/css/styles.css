@@ -56,7 +56,6 @@ article {
   50% {
     background-color: green;
     transform: translate(300px, 300px);
-    border: none;
   }
 
   75% {
