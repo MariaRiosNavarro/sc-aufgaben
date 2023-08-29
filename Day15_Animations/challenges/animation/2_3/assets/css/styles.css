@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(46, 45, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+article:hover {
+  animation: shadow 2s infinite ease-in-out;
+}
+
+article img {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: -15px -15px 40px rgb(97, 191, 222),
+      15px 15px 40px rgba(0, 0, 255, 0.5);
+  }
+  to {
+    box-shadow: -15px -15px 40px white, 15px 15px 40px white;
+  }
+}
