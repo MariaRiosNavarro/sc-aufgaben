@@ -1,7 +1,113 @@
-*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div:nth-child(odd) {
+  background-color: orange;
+}
+
+div:nth-child(even) {
+  background-color: blue;
+}
+
+/* Colomn = sind horizontal */
+/* rows = sind vertikal */
+
+/* !  ===== ELTERN ELEMENT ===== */
+.grid-parent {
+  display: grid;
+
+  /* 1fr = 1 fractiion (Bruchteil von verfügbaren Platz */
+  /* 2fr = sind doppelt so groß wie 1fr */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: 100px 200px 5vw 1fr; */
+
+  /* * benutzen wir nicht so oft, da die Rows automatsch erzeugt werden. */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+
+  /* - ABSTÄNDE */
+  gap: 5px;
+  /* row-gap: 5px; */
+  /* column-gap: 20px; */
+
+  height: 100vh;
+
+  /* ! GRID AREAS */
+  /* die namen sind frei wählbar. Es sollten aber immer auf derer Row gleich viele elemente existieren */
+  grid-template-areas:
+    "header header header header"
+    "döner döner döner side"
+    "footer footer footer footer";
+}
+
+/* ! ===== KIND ELEMENT ==== */
+section .box1 {
+  background-color: purple;
+
+  /* Basic möglichkeit wo start und ende angegeben wird */
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  /* Macht das selbe wir zeile 47 und 48. der erst wert ist Start, der zweite ende */
+  grid-column: 1 / 5;
+
+  /* Hier geht er nun endlich über die ganze breite! mit "span" sagen wir er soll sich über 4 kacheln erstrecken */
+  grid-column: 1 / span 1;
+
+  /* Damit sagen wir es soll immer die ganze breite einnehmen */
+  /* grid-column: 1 / -1; */
+
+  /* ! ALIGN- UND JUSTIFY-SELF */
+  /* align-self: self-start;
+  justify-self: self-end; */
+  /* SHORTHAND */
+  /* place-self: center center; */
+}
+
+/* section .box10 {
+  background-color: red;
+  grid-area: döner;
+} */
+
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+div {
+  color: white;
+}
+
+div:nth-child(odd) {
+  background-color: orange;
+}
+
+div:nth-child(even) {
+  background-color: blue;
+}
+
+/* 
+column gehen durch die horizontale von 1 bis end
+row gehen durch die verticale von oben nach unten
+*/
+
+/* .grid-parent { */
+/* display: grid; */
+/* 80% nur column, weil rows wird automatisch generiert */
+/* 1fr -fraction, sind responsive */
+/* grid-template-columns: repeat(4, 1fr); */
+/* grid-template-rows: repeat(5, 1fr); */
+/* row wird automatisch generiert, deswegen braucht man nur eher für areas definition */
+/* } */
