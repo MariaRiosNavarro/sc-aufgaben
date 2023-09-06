@@ -1,0 +1,13 @@
+// mixins
+@mixin my-style {
+    color: gold;
+    background-color: tomato;
+    text-align: center;
+}
+
+@mixin text-style($fz, $ff, $ls, $fw) {
+    font-size: $fz;
+    font-family: $ff;
+    letter-spacing: $ls;
+    font-weight: $fw;
+}
