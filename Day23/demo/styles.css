@@ -1,0 +1,222 @@
+/* ! BASIC */
+
+:root {
+  --bg-color: #272422;
+  --main-color: #e8bf96;
+  --white: #fff;
+  --text-color: #999999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  /* 2rem = min Wert */
+  /* 2.8vw = Optimaler Wert (Ist i.d.r immer vw) */
+  /* 5rem = max Wert ( so groß darf die font maxiamal werden!!!!!! ) */
+  font-size: clamp(8rem, 6vw, 10rem);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ! NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+  padding: 10px 2vw;
+  border: 0.5px solid rgba(128, 128, 128, 0.387);
+}
+
+nav a {
+  padding: 10px 10px;
+}
+
+/* ! TOP HEADER */
+
+header section {
+  background: url("../img/19.png") top center no-repeat;
+  margin-bottom: 200px;
+}
+
+.text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.play-btn {
+  margin-bottom: 30px;
+  width: 20%;
+  height: auto;
+}
+
+.text-content h1 {
+  margin-bottom: 30px;
+}
+
+.blond {
+  margin: 350px -50px 0 0;
+}
+
+.hut {
+  margin-left: -50px;
+}
+
+.text-content div {
+  position: relative;
+}
+
+.text-content img {
+  width: 20%;
+}
+
+/* ! Bottom */
+
+.header-bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-bottom div {
+  width: 33%;
+}
+
+.fashion-week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.fashion-week img {
+  max-width: 30px;
+}
+
+.arrow {
+  margin-bottom: 10px;
+}
+
+.center-girl {
+  background: url("../img/17.jpeg") center no-repeat;
+  height: 300px;
+  max-width: 20%;
+  min-width: 200px;
+  position: relative;
+}
+
+.center-girl img {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+
+.content-text {
+  width: 200px;
+  margin: auto;
+}
+
+.arrow-left {
+  position: absolute;
+  right: 0;
+}
+
+/* ! HOVER */
+
+.hover {
+  position: relative;
+  margin: 0 10vw;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+main h3 {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+main p {
+  margin-bottom: 50px;
+}
+
+.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 150px;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 150px;
+  width: 100px;
+}
+
+.costum:hover ~ .left {
+  background: url("../img/13.jpeg") no-repeat center;
+}
+.costum:hover ~ .right {
+  background: url("../img/16.jpeg") no-repeat center;
+}
+
+.acting:hover ~ .left {
+  background: url("../img/20.jpeg") no-repeat center;
+}
+.acting:hover ~ .right {
+  background: url("../img/21.jpeg") no-repeat center;
+}
+
+.modelling:hover ~ .left {
+  background: url("../img/7.jpeg") no-repeat center;
+}
+.modelling:hover ~ .right {
+  background: url("../img/8.jpeg") no-repeat center;
+}
+
+.artist:hover ~ .left {
+  background: url("../img/5.jpeg") no-repeat center;
+}
+.artist:hover ~ .right {
+  background: url("../img/9.jpeg") no-repeat center;
+}}
