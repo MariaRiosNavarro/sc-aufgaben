@@ -22,6 +22,7 @@ document.write(`I am ${firstName} ${lastName}`);
 document.write("<h2>Hola Mundo!</h2><p>Yuhuuu!</p>");
 
 // ÜBER document.write:
+// # GEFAHR: so wie document.innerHTML überschreibt der existierende HTML!!!
 
 // Diese Methode weist ein sehr eigenwilliges Verhalten auf.
 // In einigen Fällen kann diese Methode den Status des HTML-Parsers beeinflussen,
