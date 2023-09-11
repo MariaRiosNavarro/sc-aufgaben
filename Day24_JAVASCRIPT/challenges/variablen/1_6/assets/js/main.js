@@ -4,27 +4,27 @@ let x = 34;
 x = 67;
 console.log({ x });
 
-// Das let-Schlüsselwort wurde in ES6 (2015) eingeführt.
+// !Das let-Schlüsselwort wurde in ES6 (2015) eingeführt.
 
-// Mit let definierte Variablen können nicht neu deklariert werden
+// !Mit let definierte Variablen können nicht neu deklariert werden
 
-// Mit let definierte Variablen müssen vor der Verwendung deklariert werden
+// !Mit let definierte Variablen müssen vor der Verwendung deklariert werden
 
-// Mit let definierte Variablen haben Block-Scope
+// !Mit let definierte Variablen haben Block-Scope
 
 const y = 34;
 y = 67; // Fehler: Variable kann nicht verändert werden,
 //  da sie mit const definiert ist!
 
-//Das Schlüsselwort wurde in ES6 (2015)const eingeführt.
+//!Das Schlüsselwort wurde in ES6 (2015)const eingeführt.
 
-// Mit const definierte Variablen können nicht erneut deklariert  werden
+// !Mit const definierte Variablen können nicht erneut deklariert  werden
 
-// Mit const definierte Variablen können nicht neu zugewiesen werden
+// !Mit const definierte Variablen können nicht neu zugewiesen werden
 
-// Mit const definierte Variablen haben einen Blockbereich
+// !Mit const definierte Variablen haben einen Blockbereich
 
-// !Wann sollte JavaScript const verwendet werden?
+// #Wann sollte JavaScript const verwendet werden?
 
 // !Deklarieren Sie eine Variable immer mit const, wenn Sie wissen, dass der Wert nicht geändert werden sollte.
 
