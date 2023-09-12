@@ -13,6 +13,7 @@ function hero(heroName, heroPower, heroEnemy) {
 hero("Black Widow", "Spionage und Kampfkunst", "Taskmaster");
 hero("Captain Marvel", "Übermenschliche Kräfte und Flugfähigkeit", "Skrulls");
 hero("Scarlet Witch", "Hexenkräfte und Realitätsveränderung", "Thanos");
+// not marvel but better
 hero(
   "Superwoman",
   "Übermenschliche Kräfte, Flugfähigkeit und Hitzeblick",
