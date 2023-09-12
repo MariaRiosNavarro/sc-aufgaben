@@ -1,6 +1,7 @@
 let content = document.getElementById("wrapper");
 
 function intro3(name, alter, stadt) {
+  // use string-literal und nicht Concatenation (einfacher), aber funktioniert genau so:
   let result = `Hallo, mein Name ist ${name}. Ich bin ${alter} Jahre alt und ich komme aus ${stadt}`;
   console.log(result);
   //   extra:
