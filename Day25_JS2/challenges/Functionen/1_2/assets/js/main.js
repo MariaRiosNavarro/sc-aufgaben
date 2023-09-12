@@ -15,9 +15,8 @@
 
 // Die Funktion intro2 gibt nichts explizit zurück,
 // daher sind resultMaria, resultMarzio, resultSteffi
-// und resultJan alle undefined und so in HTML sichbar, nicht in der console.
-//  Wenn wir den Inhalt
-// in Ihr HTML-Dokument einfügen möchten, müssen
+// und resultJan alle undefined in HTML sichbar, (in der console sehen wir die).
+//  Wenn wir den Inhalt in der HTML-Dokument einfügen möchten, müssen
 // die Funktion so ändern, dass sie einen Wert zurückgibt,
 // den wir dann in das HTML einfügen können.
 
