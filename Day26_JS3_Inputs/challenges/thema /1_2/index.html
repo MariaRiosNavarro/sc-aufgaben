@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>JS 1_2 Inputs</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>JS 1_2 Inputs</header>
+    <main>
+      <form onsubmit="calculate(); return false">
+        <label for="year"></label>
+        <input type="number" id="year" />
+        <button type="submit">Berechne mein Alter</button>
+      </form>
+      <!-- !Version 2 -->
+      <!-- <form onsubmit="calculate2(); return false">
+        <label for="date"></label>
+        <input type="date" id="date" />
+        <button type="submit">Berechne mein Alter exact</button>
+      </form> -->
+      <div id="bday"></div>
+      <p id="output"></p>
+    </main>
     <footer></footer>
     <script src="./assets/js/main.js"></script>
   </body>
