@@ -3,8 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>JS Inputs & Style</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <a href="#">Value</a>
+          <a href="#">Class</a>
+          <a href="#">About</a>
+        </nav>
+        <img
+          onclick="getDark()"
+          src="./assets/img/light_mode_FILL0_wght300_GRAD0_opsz48.png"
+          alt=""
+        />
+      </header>
+      <main>
+        <section>
+          <form onsubmit="getInputValue(); return false">
+            <label for="textid">Name:</label>
+            <input type="text" id="textid" />
+            <br />
+            <label for="num">Age:</label>
+            <input type="number" id="num" />
+            <br />
+            <label for="range">Range</label>
+            <input type="range" id="range" min="0" max="100" step="1" />
+            <br />
+            <label for="checkbox">Happy:</label>
+            <input type="checkbox" id="checkbox" />
+            <br />
+            <label for="bday">Geburstag:</label>
+            <input type="date" id="bday" />
+            <br />
+            <input type="submit" />
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
