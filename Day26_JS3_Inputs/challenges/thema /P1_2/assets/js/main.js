@@ -1,43 +1,27 @@
 const result = document.querySelector("#result");
-let resultValue = result.innerHTML;
+let count = 0;
 
 function addOne() {
-  let newValue = resultValue++;
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count++;
 }
 function minusOne() {
-  let newValue = resultValue--;
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count--;
 }
 function addTen() {
-  let newValue = (resultValue += 10);
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count += 10;
 }
 function minusTen() {
-  let newValue = (resultValue -= 10);
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count -= 10;
 }
 function addHundert() {
-  let newValue = (resultValue += 100);
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count += 100;
 }
 function minusHundert() {
-  let newValue = (resultValue -= 100);
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count -= 100;
 }
 function multiplicateTwo() {
-  let newValue = (resultValue *= 2);
-  console.log(newValue);
-  return (result.textContent = newValue);
+  result.innerHTML = count *= 2;
 }
 function remove() {
-  //   let newValue = 0;
-  //   console.log(newValue);
-  //   return (result.innerHTML = newValue);
+  result.innerHTML = count = 0;
 }
