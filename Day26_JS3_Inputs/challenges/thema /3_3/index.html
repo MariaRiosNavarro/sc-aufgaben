@@ -3,13 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="wrapper">
+      <header></header>
+      <main>
+        <article>
+          <h2>version A</h2>
+
+          <label for="red">RED</label>
+          <input
+            type="range"
+            id="red"
+            name="red"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            oninput="changeColor()"
+          />
+          <label for="red">GREEN</label>
+          <input
+            type="range"
+            id="green"
+            name="green"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            oninput="changeColor()"
+          />
+          <label for="red">BLUE</label>
+          <input
+            type="range"
+            id="blue"
+            name="blue"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            oninput="changeColor()"
+          />
+        </article>
+        <article>
+          <h2>version B</h2>
+          <label for="red2">RED</label>
+          <input
+            type="range"
+            id="red2"
+            name="red2"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            onchange="changeColor2()"
+          />
+          <label for="green2">GREEN</label>
+          <input
+            type="range"
+            id="green2"
+            name="green2"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            onchange="changeColor2()"
+          />
+          <label for="blue2">BLUE</label>
+          <input
+            type="range"
+            id="blue2"
+            name="blue2"
+            min="0"
+            max="255"
+            value="0"
+            step="1"
+            onchange="changeColor2()"
+          />
+        </article>
+      </main>
+      <footer></footer>
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
