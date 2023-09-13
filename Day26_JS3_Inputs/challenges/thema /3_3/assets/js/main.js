@@ -1,15 +1,15 @@
-// !version1 :oninput
+// !version1 (oninput/onchange funktionieren hier genau so)
 
 function changeColor() {
-  // filter the values
+  // filter die values
   const red = document.querySelector("#red").value;
   const green = document.querySelector("#green").value;
   const blue = document.querySelector("#blue").value;
-  // add the values to the RGB
+  // hinzufügen der werte in der formula von rgb
   const colorRGB = `rgb(${red},${green},${blue})`;
-  //   save the element
+  //  speichern der varible
   const wrapper = document.querySelector(".wrapper");
-  //   change the color with the new color
+  //   farb wechsel mit den neue wert von colorRGB
   wrapper.style.backgroundColor = colorRGB;
 }
 
