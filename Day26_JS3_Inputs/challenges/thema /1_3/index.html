@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>JS 1_3 Inputs</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+      <header>JS 1_3 Inputs</header>
+      <main>
+        <form onsubmit="calculate(); return false">
+          <label for="year1"></label>
+          <input type="number" id="year1" />
+          <label for="year2"></label>
+          <input type="number" id="year2" />
+          <button type="submit">Berechne!</button>
+        </form>
+        <p>Die Differenz ist:</p>
+        <p id="output"></p>
+      </main>
+    </main>
     <footer></footer>
     <script src="./assets/js/main.js"></script>
   </body>
