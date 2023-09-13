@@ -1,7 +1,7 @@
 // um den standar verhalten der browser zu umgehen:
 
 // - return false - an den html:
-// - oder event.preventDefault(); in der funktion
+// - oder event.preventDefault(); in der funktion:
 // function getInputValue(event) {
 //   event.preventDefault();
 //   console.log("Input work");
