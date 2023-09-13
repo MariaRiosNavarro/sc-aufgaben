@@ -10,49 +10,83 @@ function calculate() {
 
 // version two
 
-// !function calculate2() {
-//   const dateInput = document.querySelector("#date").value;
-//   console.log({ dateInput });
+function calculate2() {
+  const dateInput = document.querySelector("#date").value;
+  console.log({ dateInput });
 
-//   // Das eingegebene Datum in ein Date-Objekt parsen
-//   const date = new Date(dateInput);
+  // Das eingegebene Datum in ein Date-Objekt parsen
+  const date = new Date(dateInput);
 
-//   // Aktuelles Datum
-//   const today = new Date();
+  // Aktuelles Datum
+  const today = new Date();
 
-//   // Die Differenz zwischen den beiden Datumswerten in Millisekunden berechnen
-//   const differenceInMilliseconds = today - date;
+  // Die Differenz zwischen den beiden Datumswerten in Millisekunden berechnen
+  const differenceInMilliseconds = today - date;
+  console.log({ differenceInMilliseconds });
 
-//   // Die Differenz in Jahren, Monaten, Tagen, Stunden, Sekunden und Millisekunden aufteilen
-//   const millisecondsPerSecond = 1000;
-//   const millisecondsPerMinute = millisecondsPerSecond * 60;
-//   const millisecondsPerHour = millisecondsPerMinute * 60;
-//   const millisecondsPerDay = millisecondsPerHour * 24;
-//   const millisecondsPerMonth = millisecondsPerDay * 30.44; // Durchschnittliche Anzahl von Tagen pro Monat
-//   const millisecondsPerYear = millisecondsPerDay * 365.25; // Durchschnittliche Anzahl von Tagen pro Jahr
+  //-- Die Differenz in Jahren, Monaten, Tagen, Stunden, Sekunden und Millisekunden aufteilen
+  const millisecondsPerSecond = 1000;
+  console.log({ millisecondsPerSecond });
+  const millisecondsPerMinute = millisecondsPerSecond * 60;
+  console.log({ millisecondsPerMinute });
+  const millisecondsPerHour = millisecondsPerMinute * 60;
+  console.log({ millisecondsPerHour });
+  const millisecondsPerDay = millisecondsPerHour * 24;
+  console.log({ millisecondsPerDay });
+  const millisecondsPerMonth = millisecondsPerDay * 30.44; // Durchschnittliche Anzahl von Tagen pro Monat
+  console.log({ millisecondsPerMonth });
+  const millisecondsPerYear = millisecondsPerDay * 365.25; // Durchschnittliche Anzahl von Tagen pro Jahr
+  console.log({ millisecondsPerYear });
 
-//   const years = Math.floor(differenceInMilliseconds / millisecondsPerYear);
-//   const remainingMilliseconds1 = differenceInMilliseconds % millisecondsPerYear;
+  //   --- Rechnungen
 
-//   const months = Math.floor(remainingMilliseconds1 / millisecondsPerMonth);
-//   const remainingMilliseconds2 = remainingMilliseconds1 % millisecondsPerMonth;
+  //  -------JAHRE
 
-//   const days = Math.floor(remainingMilliseconds2 / millisecondsPerDay);
-//   const remainingMilliseconds3 = remainingMilliseconds2 % millisecondsPerDay;
+  const years = Math.floor(differenceInMilliseconds / millisecondsPerYear);
+  console.log({ years });
+  const remainingMilliseconds1 = differenceInMilliseconds % millisecondsPerYear;
+  console.log({ remainingMilliseconds1 });
 
-//   const hours = Math.floor(remainingMilliseconds3 / millisecondsPerHour);
-//   const remainingMilliseconds4 = remainingMilliseconds3 % millisecondsPerHour;
+  //  -------Monate
+  const months = Math.floor(remainingMilliseconds1 / millisecondsPerMonth);
+  console.log({ months });
+  const remainingMilliseconds2 = remainingMilliseconds1 % millisecondsPerMonth;
+  console.log({ remainingMilliseconds2 });
 
-//   const minutes = Math.floor(remainingMilliseconds4 / millisecondsPerMinute);
-//   const remainingMilliseconds5 = remainingMilliseconds4 % millisecondsPerMinute;
+  //  -------Tage
+  const days = Math.floor(remainingMilliseconds2 / millisecondsPerDay);
+  console.log({ days });
+  const remainingMilliseconds3 = remainingMilliseconds2 % millisecondsPerDay;
+  console.log({ remainingMilliseconds3 });
 
-//   const seconds = Math.floor(remainingMilliseconds5 / millisecondsPerSecond);
-//   const milliseconds = remainingMilliseconds5 % millisecondsPerSecond;
+  //  -------Stunden
+  const hours = Math.floor(remainingMilliseconds3 / millisecondsPerHour);
+  console.log({ hours });
+  const remainingMilliseconds4 = remainingMilliseconds3 % millisecondsPerHour;
+  console.log({ remainingMilliseconds4 });
 
-//   console.log(
-//     `${years} Jahre, ${months} Monate, ${days} Tage, ${hours} Stunden, ${seconds} Sekunden, ${milliseconds} Millisekunden`
-//   );
-// }
+  //  -------Minuten
+  const minutes = Math.floor(remainingMilliseconds4 / millisecondsPerMinute);
+  console.log({ minutes });
+  const remainingMilliseconds5 = remainingMilliseconds4 % millisecondsPerMinute;
+  console.log({ remainingMilliseconds5 });
+
+  //  -------Sekunden
+  const seconds = Math.floor(remainingMilliseconds5 / millisecondsPerSecond);
+  console.log({ seconds });
+
+  //  -------Milisekunden
+  const milliseconds = remainingMilliseconds5 % millisecondsPerSecond;
+  console.log({ milliseconds });
+
+  //  ---!OUTPUT
+
+  const output = `${years} Jahre, ${months} Monate, ${days} Tage, ${hours} Stunden,${minutes} Minuten, ${seconds} Sekunden, ${milliseconds} Millisekunden`;
+
+  console.log(output);
+  const outputTag = document.querySelector("#output");
+  outputTag.innerHTML = output;
+}
 
 // !Erklärungen von calculate2():
 
