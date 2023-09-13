@@ -16,7 +16,14 @@
         </nav>
         <img
           onclick="getDark()"
-          src="./assets/img/light_mode_FILL0_wght300_GRAD0_opsz48.png"
+          class="img-light-mode"
+          src="./assets/img/icons8-tag-und-nacht-50 (1).png"
+          alt=""
+        />
+        <img
+          onclick="getDark()"
+          class="img-black-mode"
+          src="./assets/img/white.png"
           alt=""
         />
       </header>
@@ -40,6 +47,15 @@
             <br />
             <input type="submit" />
           </form>
+        </section>
+        <h2 class="output"></h2>
+        <section>
+          <p onclick="addRed()" class="one">
+            Click mich, Ich bin vielleicht red
+          </p>
+          <p onclick="removeGreen()" class="two green">
+            Click mich, Ich bin nicht mehr grün
+          </p>
         </section>
       </main>
     </div>

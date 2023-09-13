@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.wrapper {
+  margin: 2rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -34,6 +38,8 @@ input {
   display: block;
 }
 
+/* dark togglen */
+
 .dark {
   background-color: black;
   color: white;
@@ -41,4 +47,31 @@ input {
 
 .dark a {
   color: white;
+}
+
+.img-black-mode {
+  display: none;
+}
+
+.dark .img-black-mode {
+  display: block;
+}
+
+.dark .img-light-mode {
+  display: none;
+}
+
+/*  */
+
+section p {
+  font-size: 3rem;
+  padding: 3rem;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }

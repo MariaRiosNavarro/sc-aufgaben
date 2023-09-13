@@ -1,13 +1,3 @@
-// DARK MODE
-
-function getDark() {
-  console.log("Klicken geht");
-  const wrapper = document.querySelector(".wrapper");
-  wrapper.classList.toggle("dark");
-
-  // das gleiche=  document.querySelector(".wrapper").classList.toggle("dark");
-}
-
 // um den standar verhalten der browser zu umgehen:
 
 // - return false - an den html:
@@ -38,6 +28,40 @@ function getInputValue() {
     typeof checkbox,
     typeof date
   );
+  const outputData = document.querySelector(".output");
+  outputData.innerHTML =
+    nameValue + " - " + age + " - " + range + " - " + checkbox + " - " + date;
+
+  //wir müssen immer checken was von typ die werte haben, besonders beim nummern ist nicht selten , dass sie string sind und weiter umwandeln müssen
+  // version 1
+  const ageNum = Number(age);
+  console.log({ ageNum });
+  // version 2: oben das schreiben
+  // const age = Number(document.querySelector("#num").value);
 }
 
-//wir müssen immer checken was von typ die werte haben, besonders beim nummern ist nicht selten , dass sie string sind und weiter umwandeln müssen
+// DARK MODE -toggle
+
+function getDark() {
+  console.log("Klicken geht");
+  const wrapper = document.querySelector(".wrapper");
+  wrapper.classList.toggle("dark");
+
+  // das gleiche=  document.querySelector(".wrapper").classList.toggle("dark");
+}
+
+// ADD
+
+function addRed() {
+  console.log("geht add");
+  const content = document.querySelector(".one");
+  content.classList.add("red");
+}
+
+//Remove
+
+function removeGreen() {
+  console.log("geht remove");
+  const content = document.querySelector(".two");
+  content.classList.remove("green");
+}
