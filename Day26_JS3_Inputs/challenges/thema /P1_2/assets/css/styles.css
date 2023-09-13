@@ -14,7 +14,12 @@
   padding: 5rem;
   border: 2px solid black;
   height: auto;
-  background: linear-gradient(45deg, blue, rgb(231, 143, 233));
+  background: linear-gradient(
+    45deg,
+    blue,
+    rgb(231, 143, 233),
+    rgb(231, 143, 233)
+  );
 }
 
 h3 {
