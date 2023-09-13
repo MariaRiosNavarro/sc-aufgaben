@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="wrapper">
       <header></header>
       <main>
-        <form onsubmit="calculate(); return false">
+        <div class="counter">
           <h2>Counter</h2>
           <h3 id="result">0</h3>
           <button type="button" onclick="addOne()">+1</button>
@@ -21,7 +21,7 @@
           <button type="button" onclick="minusHundert()">-100</button>
           <button type="button" onclick="remove()">Reset</button>
           <button type="button" onclick="multiplicateTwo()">*2</button>
-        </form>
+        </div>
       </main>
       <footer></footer>
     </div>
