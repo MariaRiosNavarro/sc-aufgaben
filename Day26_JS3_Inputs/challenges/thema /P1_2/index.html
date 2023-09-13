@@ -7,9 +7,24 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="wrapper">
+      <header></header>
+      <main>
+        <form onsubmit="calculate(); return false">
+          <h2>Counter</h2>
+          <h3 id="result">0</h3>
+          <button type="button" onclick="addOne()">+1</button>
+          <button type="button" onclick="minusOne()">-1</button>
+          <button type="button" onclick="addTen()">+10</button>
+          <button type="button" onclick="minusTen()">-10</button>
+          <button type="button" onclick="addHundert()">+100</button>
+          <button type="button" onclick="minusHundert()">-100</button>
+          <button type="button" onclick="remove()">Reset</button>
+          <button type="button" onclick="multiplicateTwo()">*2</button>
+        </form>
+      </main>
+      <footer></footer>
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
