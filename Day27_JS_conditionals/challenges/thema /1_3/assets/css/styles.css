@@ -1,7 +1,33 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+form {
+  margin: 10rem auto;
+  padding: 2rem;
+  background-color: lightgray;
+  width: 300px;
+}
+
+input[type="button"] {
+  margin-top: 1rem;
+  background-color: rgb(200, 226, 235);
+  padding: 0.2rem 1rem;
+  border: none;
+  box-shadow: 1px -1px 10px rgb(139, 139, 236);
+}
+
+.output {
+  margin-top: 2rem;
+  text-align: center;
+  visibility: visible;
+  height: 4rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+p {
+  padding: 1rem;
 }
