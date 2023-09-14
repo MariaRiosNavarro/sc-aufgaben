@@ -25,3 +25,20 @@ function multiplicateTwo() {
 function remove() {
   result.innerHTML = count = 0;
 }
+
+// version zusammenfassend
+
+const result2 = document.querySelector("#result2");
+let count2 = 0;
+
+function superFunktion(operatoren) {
+  count2 = count2 + operatoren;
+  result2.innerHTML = count2;
+}
+
+function multiplicateTwo() {
+  result2.innerHTML = count2 *= 2;
+}
+function remove() {
+  result2.innerHTML = count2 = 0;
+}
