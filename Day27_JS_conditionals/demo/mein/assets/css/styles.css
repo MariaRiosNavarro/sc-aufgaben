@@ -18,3 +18,13 @@
 .green {
   background-color: green;
 }
+
+.login {
+  margin-top: 3rem;
+  width: 300px;
+  background-color: gray;
+  padding: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}

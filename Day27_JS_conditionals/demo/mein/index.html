@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="wdh">
+      <form onsubmit="formValues(); return false">
+        <input type="text" class="text-input" />
+        <input type="checkbox" class="check-input" />
+      </form>
+
+      <h5 class="textHeadline">Text</h5>
+      <button onclick="add()">klasse dazu</button>
+      <button onclick="remove()">klasse weg</button>
+      <button onclick="toggle()">klasse togglen</button>
+    </section>
+    <!--  -->
+    <section>
+      Conditional Statement
+      <form onsubmit="checkNumber(); return false">
+        <input type="number" class="check-num" placeholder="zahl" />
+        <input type="submit" value="check" />
+        <p class="output-num"></p>
+      </form>
+    </section>
+    <section>
+      <form class="login" onsubmit="loginUser(); return false">
+        <label for="name-user">Username</label>
+        <input type="text" id="name-user" />
+        <label for="pass"> Password</label>
+        <input type="password" id="pass" />
+        <input type="submit" value="login" />
+      </form>
+      <div class="mess"></div>
+    </section>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>

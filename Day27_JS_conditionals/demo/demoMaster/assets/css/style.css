@@ -1,0 +1,41 @@
+.fett {
+  background-color: red;
+  color: yellow;
+  font-size: 20px;
+}
+
+.toggle {
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+.couter {
+  margin: 100px 0;
+}
+
+/* LOGIN */
+
+.login {
+  background-color: gray;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login label {
+  color: white;
+  display: block;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

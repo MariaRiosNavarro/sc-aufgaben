@@ -26,7 +26,7 @@ function remove() {
   result.innerHTML = count = 0;
 }
 
-// version zusammenfassend
+// !version zusammenfassend
 
 const result2 = document.querySelector("#result2");
 let count2 = 0;
