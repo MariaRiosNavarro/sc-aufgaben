@@ -1,6 +1,7 @@
 let legalAge = 18;
 
 function greaterThan() {
+  event.preventDefault();
   const message = document.querySelector(".output");
   const age = Number(document.getElementById("input").value);
 
