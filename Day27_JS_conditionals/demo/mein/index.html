@@ -28,14 +28,24 @@
       </form>
     </section>
     <section>
-      <form class="login" onsubmit="loginUser(); return false">
-        <label for="name-user">Username</label>
-        <input type="text" id="name-user" />
+      <form class="login" onsubmit="userCheck(); return false">
+        <label for="name-user2">Username</label>
+        <input type="text" id="name-user2" />
         <label for="pass"> Password</label>
-        <input type="password" id="pass" />
+        <input type="password" id="pass2" />
         <input type="submit" value="login" />
+        <div class="mess2"></div>
       </form>
-      <div class="mess"></div>
+    </section>
+    <section>
+      <form class="login" onsubmit="checkUserData(); return false">
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+        <label for="password"> Password</label>
+        <input type="password" id="password" />
+        <input type="submit" value="login" />
+        <div class="login-output"></div>
+      </form>
     </section>
   </body>
   <script src="./assets/js/main.js"></script>
