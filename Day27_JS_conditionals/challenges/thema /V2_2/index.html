@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>2_2</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="./assets/js/main.js"></script>
+    <div class="wrapper">
+      <header></header>
+      <main>
+        <label for="air-quality">AQI:</label>
+        <input
+          type="range"
+          id="air-quality"
+          name="air-quality"
+          min="0"
+          max="150"
+          step="1"
+          onchange="qualityMessage()"
+        />
+        <div class="content"></div>
+      </main>
+      <footer></footer>
+    </div>
   </body>
+  <script src="./assets/js/main.js"></script>
 </html>

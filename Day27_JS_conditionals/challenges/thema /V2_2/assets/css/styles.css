@@ -5,3 +5,26 @@
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 15rem;
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+
+p {
+  display: block;
+  font-size: 3rem;
+  width: 100px;
+  text-align: center;
+}
