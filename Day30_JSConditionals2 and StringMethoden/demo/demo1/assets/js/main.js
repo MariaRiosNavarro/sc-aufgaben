@@ -118,3 +118,138 @@ let newSatz = `${firstName} ${lastName} ist aus ${city}`;
 console.log("newSatz");
 
 // #String Methoden
+
+let curryString = "Hallo leute ich heiße Maria. Maria geht es gut ";
+document.write(curryString);
+
+// (leerzeichen haben auch index)
+
+// Index startet immer bei 0 . In dem beispiel H ist index 0;
+
+//  * concat() verbindet 2 strings
+let moreText = "Ich bin mehr text";
+console.log(curryString.concat(moreText));
+console.log(curryString.concat(" neu text auch"));
+console.log(curryString.concat(` ${moreText}`));
+
+//  * chartAt() liefert die das jeweilge Character zurück, das in einer Zeichenkette an einer bestimmte position ist. Start bei 0
+
+console.log(curryString.charAt(1)); //a
+
+// * includes() schaut  ob das wort/zeichen in der String vorkommt.
+
+console.log(curryString.includes("hallo")); //false
+console.log(curryString.includes("Hallo")); //true
+
+// * indexOf() sucht ab welchen Index das i das erste mal vorkommt (leerzeichen werden mitgezählt)
+
+console.log(curryString.indexOf("leute"));
+console.log(curryString.indexOf("H"));
+console.log(curryString.indexOf("geht"));
+
+// optional, 2te parameter, ab wo er suchen soll
+console.log(curryString.indexOf("Maria")); // 22
+console.log(curryString.indexOf("Maria", 23)); // 29
+
+// * lenght gibt mir die länge eines strings zurück
+// ist eine propierty, kein methode, deswegen keine ()
+
+console.log(curryString.length); //47
+
+// * replace() ersetzt ein teil von einem String und gibt wieder zurück
+
+// console.log(curryString.replace("Maria", "Steffi"));
+
+// * replaceAll() hat nicht alles ersetz nur der ertse, deswegen gitb es replaceAll
+
+console.log(curryString.replaceAll("Maria", "Steffi"));
+
+// alternativ:
+
+// console.log(curryString.replace(/Maria/g, "Steffi"));
+
+// Interessant: regex for password. Mit regex kann man alle string methoden ersetzen aber sehr complex.
+
+// * slice() schneidet bis der eingegebene Index alle Zeichen und gibt den rest zurück
+
+console.log(curryString.slice(5));
+
+console.log(curryString.slice(2));
+
+console.log(curryString.slice(10));
+
+// schneidet uns index 6 - 11
+
+console.log(curryString.slice(6, 11));
+
+// * substring() schneidet
+
+console.log(curryString.substring(5));
+console.log(curryString.substring(6, 11));
+// so wie slice, aber die unterschied ist , mit slice kann ich mit -werte arbeiten
+
+console.log(curryString.slice(-5));
+console.log("sub", curryString.substring(-5)); //funktioniert nicht, kommt der gleiche string
+
+// * toLowerCase() & toUpperCase() wandelt in den entsprechende Buchstaben;
+
+console.log(curryString.toUpperCase());
+
+// * string() zahlen in string unwandeln
+
+let zahl3 = 555;
+console.log(typeof zahl3);
+let StringZahl = String(zahl3);
+console.log(typeof StringZahl);
+
+// # RETURN
+console.log("%c ===RETURN===", "background:red; color:yellow");
+// !Damit kann ich mit den wert eine funktion weiter arbeiten;
+// !return beendet die funktion
+// !BS!
+
+function returnSomething() {
+  return console.log("Hello Welt");
+  console.log("Hello das ist nicht erreichbar");
+}
+
+returnSomething();
+
+// !BSP2
+
+function gehtNicht(a, b) {
+  let outputGehtNicht = a + b;
+  // hier kann ich den Output sehen aber ist in der function gefangen
+  console.log(outputGehtNicht);
+}
+
+gehtNicht(5, 6);
+// console.log({ outputGehtNicht }); //outputGehtNicht uncaucgt, undefine
+
+// Hier kann ich den Wert aus der funktion rausgeben
+
+function add(a, b) {
+  let outputAdd = a + b;
+  return outputAdd;
+}
+//hier speichern wir den wert in einer neuen Variable zum weiter verarbeiten
+let returnOutput = add(3, 5);
+console.log({ returnOutput });
+
+// ! bSP3 check gerade/ungerade
+
+let numA = 4;
+
+function isEven(number) {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let resultA = isEven(numA)
+  ? `die Zahl ${numA} is gerade`
+  : `die Zahl ${numA} is ungerade`;
+
+console.log({ resultA });
