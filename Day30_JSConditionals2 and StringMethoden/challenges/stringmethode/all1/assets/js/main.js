@@ -92,7 +92,7 @@ console.log({ words });
 
 let capitalizedWords = words.map(
   (word) => word.charAt(0).toUpperCase() + word.slice(1)
-); // Jedes Wort großschreiben
+); // Jedes Wort das erste Buchstabe großschreiben
 console.log(capitalizedWords);
 
 let thirdText = capitalizedWords.join(" "); // Die Wörter wieder zu einem Satz verbinden und dazwischen 1 leerzeichen statt ein , wie ursprunglich in der Array
