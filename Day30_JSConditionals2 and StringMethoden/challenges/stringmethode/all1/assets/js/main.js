@@ -48,7 +48,16 @@ console.log(school);
 let susiIsSchool = `${susi}  ${is}  ${school}`;
 console.log(susiIsSchool);
 
+document.write(
+  susi + " " + is + " " + isGoingToSchool + " " + school + " " + susiIsSchool
+);
+
 console.log("%c ===1_7=== replace()", "background:red; color:yellow");
+
+const text = "Sam is good at codingschool";
+console.log(text.replace("good", "bad"));
+console.log(text.replace("Sam", "Susi"));
+console.log(text.replace("codingschool", "tennis"));
 
 console.log("%c ===1_8=== toUpperCase()", "background:red; color:yellow");
 
