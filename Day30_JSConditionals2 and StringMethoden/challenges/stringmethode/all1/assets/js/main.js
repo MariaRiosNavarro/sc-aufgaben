@@ -32,6 +32,22 @@ console.log(txt2.search("blue")); //-1 meaning not found
 
 console.log("%c ===1_4=== slice()", "background:red; color:yellow");
 
+const A = "Susi is going to codingschool";
+
+let susi = A.slice(0, 4);
+// console.log(susi.length);
+console.log(susi);
+
+let is = A.slice(5, 7);
+console.log(is);
+
+let isGoingToSchool = A.slice(5, 17) + A.slice(23, 29);
+console.log(isGoingToSchool);
+let school = A.slice(23, 29);
+console.log(school);
+let susiIsSchool = `${susi}  ${is}  ${school}`;
+console.log(susiIsSchool);
+
 console.log("%c ===1_7=== replace()", "background:red; color:yellow");
 
 console.log("%c ===1_8=== toUpperCase()", "background:red; color:yellow");
