@@ -23,6 +23,13 @@ console.log(txt.indexOf("Moon")); //-1 meaning not found
 
 console.log("%c ===1_3=== search()", "background:red; color:yellow");
 
+let txt2 =
+  "Blue, green, grey, white, or black; smooth, ruffled, or mountainous; that ocean is not silent.";
+
+console.log(txt2.search(";")); //34
+console.log(txt2.search("green")); //6
+console.log(txt2.search("blue")); //-1 meaning not found
+
 console.log("%c ===1_4=== slice()", "background:red; color:yellow");
 
 console.log("%c ===1_7=== replace()", "background:red; color:yellow");
