@@ -1,5 +1,7 @@
 // #switch
 
+console.log("%c ===switch===", "background:red; color:yellow");
+
 let zahl = 1; //(mit break geht nicht weiter)
 
 switch (zahl) {
