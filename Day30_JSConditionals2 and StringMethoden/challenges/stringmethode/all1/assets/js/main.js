@@ -55,9 +55,17 @@ document.write(
 console.log("%c ===1_7=== replace()", "background:red; color:yellow");
 
 const text = "Sam is good at codingschool";
-console.log(text.replace("good", "bad"));
-console.log(text.replace("Sam", "Susi"));
-console.log(text.replace("codingschool", "tennis"));
+let text2 = text.replace("good", "bad");
+let text3 = text.replace("Sam", "Susi");
+let text4 = text.replace("codingschool", "tennis");
+console.log();
+console.log();
+console.log();
+
+document.write(text + "<br>");
+document.write(text2 + "<br>");
+document.write(text3 + "<br>");
+document.write(text4 + "<br>");
 
 console.log("%c ===1_8=== toUpperCase()", "background:red; color:yellow");
 
