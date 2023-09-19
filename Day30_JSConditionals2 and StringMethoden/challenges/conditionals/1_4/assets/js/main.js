@@ -23,9 +23,7 @@ function passwordCheck() {
   value.length < 8
     ? (outputText.innerHTML = valid)
     : (outputText.innerHTML = invalid);
-}
 
-// remove everything in the input when we clik another time to give a new password
-input.addEventListener("mouseover", function () {
+  // leeren der input, wenn der Output ausgegeben wird
   input.value = "";
-});
+}
