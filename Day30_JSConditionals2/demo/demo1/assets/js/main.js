@@ -1,7 +1,5 @@
 // #switch
 
-console.log("%c ===SWITCH===", "background:red; color:yellow");
-
 let zahl = 1; //(mit break geht nicht weiter)
 
 switch (zahl) {
@@ -80,3 +78,39 @@ switch (true) {
 // #Ternary Operator
 
 console.log("%c ===Ternary Operator===", "background:red; color:yellow");
+
+let hungry = false;
+hungry
+  ? console.log("Ich habe Hunger") //true
+  : console.log("Ich habe kein Hunger"); //false
+
+// !WIr brauchen IMMER ein alternativ wert zu true,
+// !egal welche
+
+// hungry? console.log('ich habe Hunger'): "";
+// hungry? console.log('ich habe Hunger'): null;
+// hungry? console.log('ich habe Hunger'): undefined;
+
+// -check num
+
+let zahl2 = 5;
+
+// Ternary in einer Varible
+
+let result =
+  zahl2 >= 5 ? "Ja, ist größer als 5 oder  5" : "Nein, ist nicht Großer als 5";
+
+console.log(result);
+
+// #Template Literal
+
+console.log("%c ===Template Literal===", "background:red; color:yellow");
+
+let firstName = "John";
+let lastName = "Doe";
+let city = "Los Angeles";
+let satz = firstName + lastName + " ist aus " + city;
+
+// mit template literal
+
+let newSatz = `${firstName} ${lastName} ist aus ${city}`;
