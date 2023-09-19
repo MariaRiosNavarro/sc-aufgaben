@@ -131,3 +131,34 @@ let thirdTextVersionBad =
 console.log(thirdTextVersionBad);
 
 console.log("%c ===1_9=== concat() ", "background:red; color:yellow");
+
+const textA = "Sam is going to codingschool";
+const textB = "Susi";
+const textC = "and";
+
+let textD = textA.replace("to codingschool", "to the movie theater");
+console.log(textD);
+
+let textE = textD.slice(13);
+console.log(textE);
+
+const output = document.querySelector('[data-js="output"]');
+
+// Sam is going to school and to the movie theater
+let sentenceA = textA + " " + textC + " " + textE;
+console.log(sentenceA);
+output.innerHTML += `SentenceA is = "${sentenceA}"<br>`;
+// Sam is going to the movie theater
+let sentenceB = textD;
+console.log(sentenceB);
+output.innerHTML += `SentenceB is = "${sentenceB}"<br>`;
+// Susi and Sam are going to school
+let sentenceC = textB + " " + textC + " " + textA.replace("is", "are");
+output.innerHTML += `SentenceC is = "${sentenceC}" <br>`;
+// Susi and Sam are going to gym and to the movie theater
+let sentenceD =
+  sentenceC.replace("to codingschool", "to gym") + " " + textC + " " + textE;
+output.innerHTML += `SentenceD is = "${sentenceD}" <br>`;
+// Susi is going to school and to the movie theater
+let sentenceE = textA.replace("Sam", textB) + " " + textC + " " + textE;
+output.innerHTML += `SentenceE is = "${sentenceE}" <br>`;
