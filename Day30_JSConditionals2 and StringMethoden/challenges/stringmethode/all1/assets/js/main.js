@@ -54,19 +54,80 @@ document.write(
 
 console.log("%c ===1_7=== replace()", "background:red; color:yellow");
 
-const text = "Sam is good at codingschool";
-let text2 = text.replace("good", "bad");
-let text3 = text.replace("Sam", "Susi");
-let text4 = text.replace("codingschool", "tennis");
+const text1 = "Sam is good at codingschool";
+let text2 = text1.replace("good", "bad");
+let text3 = text1.replace("Sam", "Susi");
+let text4 = text1.replace("codingschool", "tennis");
 console.log();
 console.log();
 console.log();
 
-document.write(text + "<br>");
+document.write(text1 + "<br>");
 document.write(text2 + "<br>");
 document.write(text3 + "<br>");
 document.write(text4 + "<br>");
 
 console.log("%c ===1_8=== toUpperCase()", "background:red; color:yellow");
+
+const text = "Sam is going to codingschool";
+
+let uppercaseText = text.toUpperCase();
+console.log(uppercaseText);
+
+let sam = text.slice(0, 4);
+let isGoingTo = text.slice(4, 15);
+console.log(isGoingTo);
+let cschool = text.slice(22, 28);
+console.log(cschool);
+
+let firstText = sam.toUpperCase() + isGoingTo + " " + cschool.toUpperCase();
+console.log(firstText);
+let secondText = sam.toLowerCase() + isGoingTo.toUpperCase() + " " + cschool;
+console.log(secondText);
+
+//!Sam Is Going To School (efizienter mit Arrays)
+
+let words = text.split(" "); // Den Text in Wörter in ein Array aufteilen
+console.log({ words });
+
+let capitalizedWords = words.map(
+  (word) => word.charAt(0).toUpperCase() + word.slice(1)
+); // Jedes Wort großschreiben
+console.log(capitalizedWords);
+
+let thirdText = capitalizedWords.join(" "); // Die Wörter wieder zu einem Satz verbinden und dazwischen 1 leerzeichen statt ein , wie ursprunglich in der Array
+
+console.log(thirdText);
+
+//!Sam Is Going To School (komplizierte)
+
+let word1Capitalize = sam.charAt(0).toUpperCase() + sam.slice(1);
+console.log("word1Capitalize", word1Capitalize);
+
+let word2 = isGoingTo.slice(0, 2);
+let word2Capitalize = word2.charAt(0).toUpperCase() + word2.slice(1);
+console.log("word2Capitalize", word2Capitalize);
+
+let word3 = isGoingTo.slice(3, 9);
+let word3Capitalize = word3.charAt(0).toUpperCase() + word3.slice(1);
+console.log("word3Capitalize", word3Capitalize);
+
+let word4 = isGoingTo.slice(9, 11);
+let word4Capitalize = word4.charAt(0).toUpperCase() + word4.slice(1);
+console.log("word4Capitalize", word4Capitalize);
+
+let word5Capitalize = cschool.charAt(0).toUpperCase() + cschool.slice(1);
+console.log("word5Capitalize", word5Capitalize);
+
+let thirdTextVersionBad =
+  word1Capitalize +
+  word2Capitalize +
+  " " +
+  word3Capitalize +
+  " " +
+  word4Capitalize +
+  " " +
+  word5Capitalize;
+console.log(thirdTextVersionBad);
 
 console.log("%c ===1_9=== concat() ", "background:red; color:yellow");
