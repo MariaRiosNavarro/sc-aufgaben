@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>String_Methods2_3</title>
   </head>
   <body>
     <h1>JavaScript</h1>
-    <article>
+    <article data-js="text">
       JavaScript, often abbreviated as JS, is a programming language that
       conforms to the ECMAScript specification. JavaScript is high-level, often
       just-in-time compiled, and multi-paradigm. It has curly-bracket syntax,
@@ -31,9 +31,14 @@
       and Java, including language name, syntax, and respective standard
       libraries, the two languages are distinct and differ greatly in design.
     </article>
-    <form action="#">
-      <input type="text" name="search" id="search-input" />
-      <input type="button" id="search-button" value="Search" />
+    <form onsubmit="searchInput(); return false">
+      <input
+        type="text"
+        name="search"
+        id="search-input"
+        data-js="search-input"
+      />
+      <input type="submit" id="search-button" value="Search" />
     </form>
     <script src="./assets/js/main.js"></script>
   </body>
