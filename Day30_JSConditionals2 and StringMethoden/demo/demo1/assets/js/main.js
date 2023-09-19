@@ -114,3 +114,7 @@ let satz = firstName + lastName + " ist aus " + city;
 // mit template literal
 
 let newSatz = `${firstName} ${lastName} ist aus ${city}`;
+
+console.log("newSatz");
+
+// #String Methoden
