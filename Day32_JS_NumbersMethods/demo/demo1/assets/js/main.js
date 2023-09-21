@@ -6,7 +6,7 @@ const num1 = 12.876374;
 console.log(num1.toFixed());
 console.log(typeof num1.toFixed());
 
-// Als argument können wir die Nummer mitgebe wie sie abgerundet werden soll
+// Als argument können wir die Nummer mitgebe wie sie abgerundet werden soll. Ohne argument rundet auf die Ganze Zahl
 
 console.log(num1.toFixed(3)); //
 
