@@ -57,4 +57,13 @@ console.log("test", random * 10);
 
 // zufallszahl 1-10 (inklusive. wurfel kein 0. Daher Math.ceil, die nach oben rundet, also nie nach unter zu 0)
 
+// !AUFPASSEN NEGATIVE WERTE: mit ceil können auch 0 erreichen wenn der wert das wir geben negativ ist
+
 console.log(Math.ceil(random * 10));
+
+let numA = -0.13847294;
+
+console.log(numA.toFixed(2)); // -0.84
+console.log(Math.round(numA)); //-0
+console.log(Math.ceil(numA)); // -0
+console.log(Math.floor(numA)); //-2
