@@ -1,5 +1,10 @@
 // # Numbers Methoden
 
+// * Pi
+
+let x = Math.PI;
+console.log(x);
+
 // * toFixed() rundet zu die nächste Ganzazhlt. ERGEBNIS IST EIN STRING!!! ACHTUNG
 
 const num1 = 12.876374;
