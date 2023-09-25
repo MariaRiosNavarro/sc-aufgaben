@@ -138,3 +138,37 @@ const emailCheck = () => {
     ? (output.innerHTML = `${email} was Not found`)
     : (output.innerHTML = `${email} was found`);
 };
+
+// Anderen Metoden : split & join - Sind String Methoden,
+
+// split- dass ein Array zuruck gibt
+
+const text = "hallo heute lernen arrays";
+
+console.log(text);
+const textArray1 = text.split();
+// console.log(textArray); //["hallo heute lernen arrays methoden"]
+
+const textArray2 = text.split(""); //jede buchastabe
+console.log(textArray2);
+
+const textArray3 = text.split(" "); //der text wird durch die leerzeichen getreent
+console.log(textArray3);
+
+const text2 = "Hallo;ihr;lieben;wir;lernen";
+const textToArr = text2.split(";"); //entfern die ;
+console.log(textToArr);
+const arrToText = textToArr.join(" "); //zusamenfügen mit ein leerzeichen verbinden
+console.log({ arrToText });
+
+// interessant un csv datein umzuwandeln
+
+// zb:
+//
+
+const tabelle =
+  "id;palettennummer;x-koordinate;y-koordninate;aktion;datum;uhrzeit 1;4711;1;2;auslagerung;31.10.2019;14:14 2;4800;3;4;einlagerung;31.10.2019:14:21 3;4801;6;1;einlagerung;31.10.2019;14:25";
+
+let texttrennen = tabelle.split(";");
+let newarray = texttrennen.join(" ");
+console.log(newarray);
