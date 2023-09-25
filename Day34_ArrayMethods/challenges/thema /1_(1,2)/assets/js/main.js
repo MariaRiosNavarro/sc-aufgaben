@@ -29,10 +29,27 @@ console.log({ personLength, friendsLength, mealsLength });
 // 1_4
 
 person.push("a", "b");
-console.log(person);
+console.log({ person });
 
 friends.push("jake", "jude");
-console.log(friends);
+console.log({ friends });
 
 meals.push("paella", "pizza");
-console.log(meals);
+console.log({ meals });
+
+// 1_5
+
+let lastOnePerson = person.pop();
+console.log({ lastOnePerson });
+let lastTwoPerson = person.pop();
+console.log({ lastTwoPerson });
+
+let lastOneFriends = friends.pop();
+console.log({ lastOneFriends });
+let lastTwoFriends = friends.pop();
+console.log({ lastTwoFriends });
+
+let lastOneMeal = meals.pop();
+console.log({ lastOneMeal });
+let lastTwoMeal = meals.pop();
+console.log({ lastTwoMeal });
