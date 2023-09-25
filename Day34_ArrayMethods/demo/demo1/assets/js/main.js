@@ -167,8 +167,6 @@ console.log({ arrToText });
 //
 
 const tabelle =
-  "id;palettennummer;x-koordinate;y-koordninate;aktion;datum;uhrzeit 1;4711;1;2;auslagerung;31.10.2019;14:14 2;4800;3;4;einlagerung;31.10.2019:14:21 3;4801;6;1;einlagerung;31.10.2019;14:25";
+  "id;palettennummer;x-koordinate;y-koordninate;aktion;datum;uhrzeit;4711;1;2;auslagerung;31.10.2019;14:14 2;4800;3;4;einlagerung;31.10.2019:14:21 3;4801;6;1;einlagerung;31.10.2019;14:25";
 
 let texttrennen = tabelle.split(";");
-let newarray = texttrennen.join(" ");
-console.log(newarray);
