@@ -25,3 +25,14 @@ let friendsLength = friends.length;
 let mealsLength = meals.length;
 
 console.log({ personLength, friendsLength, mealsLength });
+
+// 1_4
+
+person.push("a", "b");
+console.log(person);
+
+friends.push("jake", "jude");
+console.log(friends);
+
+meals.push("paella", "pizza");
+console.log(meals);
