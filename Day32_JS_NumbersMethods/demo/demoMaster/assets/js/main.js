@@ -138,10 +138,10 @@ console.log("B", numB);
 
 console.log("---------to fixed");
 
-console.log(numA.toFixed());
-console.log(numA.toFixed(3));
-console.log(numB.toFixed());
-console.log(numB.toFixed(3));
+console.log(numA.toFixed()); //0
+console.log(numA.toFixed(3)); //0.123
+console.log(numB.toFixed()); //1
+console.log(numB.toFixed(3)); //0.568
 
 console.log("---------Math.round");
 console.log(Math.round(numA)); //0
