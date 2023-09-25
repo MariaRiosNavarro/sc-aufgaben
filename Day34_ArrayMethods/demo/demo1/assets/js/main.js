@@ -110,3 +110,31 @@ console.log(firstPerson);
 
 classArray.unshift("HAHA");
 console.log(classArray);
+
+// --
+
+let emailArr = [
+  "batman@batcave.gotham",
+  "flash@superspeed.nyc",
+  "C3PO@droids.com",
+  "R2D2@droid.com",
+  "steffen@super-code.de",
+];
+
+// ---
+
+const emailInput = document.querySelector("#email");
+console.log({ emailInput });
+const output = document.querySelector("footer");
+
+const emailCheck = () => {
+  const email = emailInput.value;
+  console.log(email);
+  let findEmail = emailArr.indexOf(email);
+
+  console.log({ findEmail });
+
+  findEmail === -1
+    ? (output.innerHTML = `${email} was Not found`)
+    : (output.innerHTML = `${email} was found`);
+};
