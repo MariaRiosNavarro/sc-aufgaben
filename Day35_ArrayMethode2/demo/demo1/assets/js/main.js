@@ -118,3 +118,27 @@ const modiNumbersArray = numbers2.map((elt) => elt * 2);
 console.log("modiNumbersArray", modiNumbersArray);
 
 // !in react sehr wichtig da react immer return werte braucht
+
+// andere methoden: .include(); .filter(); .every(); .find(); .reduce();
+
+console.log("----test");
+
+const newArray = ["m", "n", "o", "p", "q"];
+console.log("A", newArray.slice(1, 3));
+
+const otherArray = ["i", "j", "k", "l"];
+
+console.log(otherArray.splice(1, 2, "newItem"));
+console.log(otherArray);
+
+const numbersArray = [1, 5, 6, 3, 12];
+console.log(numbersArray.reverse());
+
+console.log(numbersArray.sort());
+
+console.log(numbersArray.sort((a, b) => a - b));
+console.log(numbersArray.sort((a, b) => b - a));
+
+const oddNumbers = [3, 5, 7];
+let evenNumbers = oddNumbers.map((element) => element + 1);
+console.log("evenNumbers", evenNumbers);

@@ -143,23 +143,26 @@ const emailCheck = () => {
 
 // split- dass ein Array zuruck gibt
 
-const text = "hallo heute lernen arrays";
+const text = "Hello JS friends";
 
 console.log(text);
 const textArray1 = text.split();
 // console.log(textArray); //["hallo heute lernen arrays methoden"]
+console.log("textArray1", textArray1);
 
 const textArray2 = text.split(""); //jede buchastabe
-console.log(textArray2);
+console.log("textArray2", textArray2);
 
 const textArray3 = text.split(" "); //der text wird durch die leerzeichen getreent
-console.log(textArray3);
+console.log("textArray3", textArray3);
 
 const text2 = "Hallo;ihr;lieben;wir;lernen";
 const textToArr = text2.split(";"); //entfern die ;
 console.log(textToArr);
 const arrToText = textToArr.join(" "); //zusamenfügen mit ein leerzeichen verbinden
 console.log({ arrToText });
+
+console.log("join", text.split(" ").join(" "));
 
 // interessant un csv datein umzuwandeln
 
