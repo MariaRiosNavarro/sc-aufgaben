@@ -70,3 +70,26 @@ let celsiusArray = copyTempF.map((f) => celsiusCalc(f));
 
 console.log("celsiusArray", celsiusArray);
 // [-18, 0, 7, 10, 24, 27, 37, 49]
+
+// 1_5
+
+let checkNumber = [
+  18, 16, 80, 51, 47, 38, 95, 42, 68, 61, 34, 51, 20, 17, 56, 31, 100, 6, 5, 30,
+  74, 97, 28, 99, 91, 27, 73, 12, 92, 6, 27, 71, 26, 15, 78,
+];
+
+const plusHundertIfMoluloThreeIsNull = (a) => (a % 3 === 0 ? a + 100 : a);
+
+let testArr = [3, 18, 25];
+
+console.log(plusHundertIfMoluloThreeIsNull(3));
+console.log(plusHundertIfMoluloThreeIsNull(18));
+console.log(plusHundertIfMoluloThreeIsNull(25));
+
+let newArrayNumber = checkNumber.map((element) =>
+  plusHundertIfMoluloThreeIsNull(element)
+);
+
+console.log(newArrayNumber);
+
+// (35) [118, 16, 80, 151, 47, 38, 95, 142, 68, 61, 34, 151, 20, 17, 56, 31, 100, 106, 5, 130, 74, 97, 28, 199, 91, 127, 73, 112, 92, 106, 127, 71, 26, 115, 178]
