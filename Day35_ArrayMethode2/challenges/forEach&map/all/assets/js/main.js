@@ -56,3 +56,17 @@ newArray.forEach((element) => {
 });
 
 console.log(noDuplicates2);
+
+//1_4
+
+let fahrenheit = [0, 32, 45, 50, 75, 80, 99, 120];
+
+const celsiusCalc = (f) => Math.round((f - 32) / 1.8);
+
+let copyTempF = fahrenheit.slice();
+console.log(copyTempF);
+
+let celsiusArray = copyTempF.map((f) => celsiusCalc(f));
+
+console.log("celsiusArray", celsiusArray);
+// [-18, 0, 7, 10, 24, 27, 37, 49]
