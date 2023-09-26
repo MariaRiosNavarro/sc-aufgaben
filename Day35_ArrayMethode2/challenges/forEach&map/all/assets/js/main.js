@@ -93,3 +93,31 @@ let newArrayNumber = checkNumber.map((element) =>
 console.log(newArrayNumber);
 
 // (35) [118, 16, 80, 151, 47, 38, 95, 142, 68, 61, 34, 151, 20, 17, 56, 31, 100, 106, 5, 130, 74, 97, 28, 199, 91, 127, 73, 112, 92, 106, 127, 71, 26, 115, 178]
+
+// 1_6
+
+let album = [
+  "holidays.jpg",
+  "Restaurant.jpg",
+  "desktop",
+  "rooms.GIF",
+  "DOGATBEACH.jpg",
+];
+
+let copyAlbumArray = album.slice();
+console.log(copyAlbumArray);
+
+let cracyShit = copyAlbumArray.map((e) => {
+  if (e.includes(".")) {
+    return e.slice(0, -4);
+  } else {
+    return (e = "invalid");
+  }
+});
+
+let cracyShitLowercase = cracyShit.map((s) => s.toLowerCase());
+
+console.log(cracyShitLowercase);
+// ['holidays', 'restaurant', 'invalid', 'rooms', 'dogatbeach']
+
+// 1_6
