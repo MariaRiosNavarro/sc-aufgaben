@@ -21,8 +21,14 @@ for (let i = 0; i < 11; i++) {
 
 console.log("outside the loop", numArray);
 
-// 1_3
+// 1_4
 console.log(
-  "%c-------------------Aufgabe--1_3---------------------",
+  "%c-------------------Aufgabe--1_4---------------------",
   "background-color: green; color: black;"
 );
+
+const names = ["Georg", "Anass", "Elaine", "Hakan", "Eric", "Kim", "Sergio"];
+
+for (const name of names) {
+  console.log(name);
+}
