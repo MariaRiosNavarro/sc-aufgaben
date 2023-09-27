@@ -39,7 +39,7 @@ const saveNumber2 = () => {
   const loop = Number(loopNumber2.value);
   let newText = "";
   for (let i = 0; i < loop; i++) {
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
       newText += "o";
     } else {
       newText += "0";
