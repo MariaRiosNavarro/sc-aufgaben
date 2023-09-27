@@ -120,4 +120,4 @@ let cracyShitLowercase = cracyShit.map((s) => s.toLowerCase());
 console.log(cracyShitLowercase);
 // ['holidays', 'restaurant', 'invalid', 'rooms', 'dogatbeach']
 
-// 1_6
+
