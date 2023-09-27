@@ -12,6 +12,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 4rem;
+  margin-top: 3rem;
 }
 
 .output {
@@ -22,4 +23,19 @@ main {
 .output2 {
   color: rgb(139, 34, 59);
   font-size: 2rem;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.alert {
+  font-size: 1rem;
+  text-align: center;
+  background-color: red;
+  color: beige;
 }
