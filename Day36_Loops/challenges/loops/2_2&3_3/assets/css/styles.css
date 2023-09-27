@@ -5,3 +5,21 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.output {
+  color: rgb(49, 179, 49);
+  font-size: 2rem;
+}
+
+.output2 {
+  color: rgb(139, 34, 59);
+  font-size: 2rem;
+}
