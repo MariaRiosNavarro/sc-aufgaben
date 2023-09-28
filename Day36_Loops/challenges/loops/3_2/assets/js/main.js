@@ -4,7 +4,7 @@ const out = document.querySelector('[data-js="output"]');
 
 let divisor = 1;
 
-const searchModulo = (num) => {
+const searchDivider = (num) => {
   for (let i = 1; i <= 100; i++) {
     divisor = i;
     if (
@@ -23,5 +23,5 @@ const searchModulo = (num) => {
 };
 
 for (let j = 0; j < numArr.length; j++) {
-  searchModulo(numArr[j]);
+  searchDivider(numArr[j]);
 }
