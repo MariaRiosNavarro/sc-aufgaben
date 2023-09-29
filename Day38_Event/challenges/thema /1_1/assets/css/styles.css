@@ -5,3 +5,18 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  margin: 5rem;
+}
+
+.green {
+  background-color: green;
+  color: antiquewhite;
+  font-weight: 700;
+  text-align: center;
+}

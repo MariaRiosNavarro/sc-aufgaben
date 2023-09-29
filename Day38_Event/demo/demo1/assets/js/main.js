@@ -74,6 +74,16 @@ submit.addEventListener("click", () => {
   console.log("test");
 
   // ! ===remove (wenn ich clicke entferne ein event listener, die ich vorher gegeben habe)
+// remove funktioniert nur mit ausgelagerte funktionen und NICHT mit anonime!!!
+// also nicht mit anonime wie:
+
+// select.addEventListener("change", () => {
+//   console.log("ich wuude verändeert");
+//   out.innerHTML = select.value;
+// });
+
+
+// !so wie hier funktioniert remove, ausgelagert
 
   textInput.removeEventListener("input", inputFunction);
 });
