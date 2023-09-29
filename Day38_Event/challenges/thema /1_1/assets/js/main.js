@@ -17,3 +17,17 @@ btn.addEventListener("click", () => {
   count++;
   counter.innerHTML = count;
 });
+
+// 1_6
+
+const select = document.querySelector('[data-js="select"]');
+const selectOut = document.querySelector('[data-js="select-output"]');
+
+select.addEventListener("change", () => {
+  //   event.preventDefault;
+  //   selectOut.innerHTML = event.target.value;
+  event.preventDefault;
+  selectOut.innerHTML = `Sie haben die option ${select.value} ausgewählt`;
+});
+
+// --
