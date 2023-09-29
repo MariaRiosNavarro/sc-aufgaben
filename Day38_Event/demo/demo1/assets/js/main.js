@@ -17,6 +17,8 @@
 const sayHelloBtn = document.querySelector("#hallo-btn");
 const out = document.querySelector("#doc");
 const textInput = document.querySelector("#text");
+const select = document.querySelector("#select");
+const submit = document.querySelector("#submit");
 
 // ! Aufbau
 // !element das beobachtet wird
@@ -48,11 +50,36 @@ textInput.addEventListener("mouseout", () => {
   textInput.style.border = "1px solid";
 });
 
-//  # Change
+//  # Change value wid verändert
 
-textInput.addEventListener("", () => {});
-textInput.addEventListener("", () => {});
-textInput.addEventListener("", () => {});
-textInput.addEventListener("", () => {});
-textInput.addEventListener("", () => {});
-textInput.addEventListener("", () => {});
+select.addEventListener("change", () => {
+  console.log("ich wuude verändeert");
+  out.innerHTML = select.value;
+});
+
+//  !beispiel auslagern mit INPUT, externe eventlistener, damit genereller haltem können
+
+const inputFunction = () => {
+  console.log("In mich würde etwas eingetragen");
+  out.innerHTML = textInput.value;
+};
+
+textInput.addEventListener("input", inputFunction);
+
+// !Mehode um standar verhalten eines Ereignes in ein Webbrowser zu verhindern
+// # =====   event.preventDefault()  ======
+
+submit.addEventListener("click", () => {
+  event.preventDefault();
+  console.log("test");
+
+  // ! ===remove (wenn ich clicke entferne ein event listener, die ich vorher gegeben habe)
+
+  textInput.removeEventListener("input", inputFunction);
+});
+
+// textInput.addEventListener("", () => {});
+// textInput.addEventListener("", () => {});
+// textInput.addEventListener("", () => {});
+// textInput.addEventListener("", () => {});
+// textInput.addEventListener("", () => {});
