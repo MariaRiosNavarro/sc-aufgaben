@@ -1,6 +1,19 @@
+// 1_4
+
 const text = document.querySelector('[data-js="text"]');
 
 text.addEventListener("click", () => {
   console.log("Du hast auf den Event-Paragraphen geklickt.");
   text.classList.toggle("green");
+});
+
+// 1_5
+
+const btn = document.querySelector('[data-js="clickMe"]');
+const counter = document.querySelector('[data-js="output"]');
+
+let count = 0;
+btn.addEventListener("click", () => {
+  count++;
+  counter.innerHTML = count;
 });
