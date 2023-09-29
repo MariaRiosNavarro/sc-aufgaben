@@ -36,11 +36,19 @@ section {
 }
 
 button {
-  padding: 20px;
+  padding: 1rem 2rem;
   background: transparent;
   text-shadow: 1px 1px 1px #202020;
   font-family: "Lato", sans-serif;
-  font-size: 18pt;
+  font-size: 2rem;
   border: 1px solid #c2e8ce;
   color: #c2e8ce;
+  border-radius: 5px;
+}
+
+form {
+  padding: 5px;
+  display: inline;
+  border-radius: 5px;
+  display: flex;
 }
