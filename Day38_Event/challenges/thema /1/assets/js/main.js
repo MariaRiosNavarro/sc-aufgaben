@@ -3,6 +3,7 @@
 const text = document.querySelector('[data-js="text"]');
 
 text.addEventListener("click", () => {
+  event.preventDefault();
   console.log("Du hast auf den Event-Paragraphen geklickt.");
   text.classList.toggle("green");
 });
@@ -14,6 +15,7 @@ const counter = document.querySelector('[data-js="output"]');
 
 let count = 0;
 btn.addEventListener("click", () => {
+  event.preventDefault();
   count++;
   counter.innerHTML = count;
 });
@@ -26,7 +28,7 @@ const selectOut = document.querySelector('[data-js="select-output"]');
 select.addEventListener("change", () => {
   //   event.preventDefault;
   //   selectOut.innerHTML = event.target.value;
-  event.preventDefault;
+  event.preventDefault();
   selectOut.innerHTML = `Sie haben die option ${select.value} ausgewählt`;
 });
 
@@ -35,6 +37,6 @@ const selectColor = document.querySelector('[data-js="select-color"]');
 const removeColor = document.querySelector('[data-js="remove-color"]');
 
 removeColor.addEventListener("click", () => {
-  event.preventDefault;
+  event.preventDefault();
   selectColor.remove(selectColor.selectedIndex);
 });
