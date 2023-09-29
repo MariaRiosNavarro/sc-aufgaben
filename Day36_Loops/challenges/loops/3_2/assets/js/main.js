@@ -54,7 +54,7 @@ searchDivider();
 // for (let i = 0; i < numArr.length; i++) {
 //   for (let j = 0; j < numArr[i]; j++) {
 //     if (j === 1) {
-//       continue;// wenn mit sich selbst teilbar ist, brauchen wir den wert nicht
+//       continue;// wenn mit sich selbst teilbar ist, brauchen wir den wert nicht, dann überspringen den if teil von unten und machen weiter mit den nächsten loop
 //     }
 
 //     if (numArr[i] % j === 0) {
@@ -62,3 +62,5 @@ searchDivider();
 //     }
 //   }
 // }
+
+
