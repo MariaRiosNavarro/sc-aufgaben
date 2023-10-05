@@ -5,3 +5,63 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Karla", sans-serif;
+  padding: 5rem;
+}
+
+button {
+  background-color: #035aa6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.wrapper {
+  /* max-width: 500px; */
+  margin: 3rem;
+}
+div {
+  border-radius: 5px;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.small-text {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.small-box {
+  background-color: lightblue;
+}
+
+.middle-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.middle-box {
+  background-color: yellow;
+  padding: 1rem;
+  border: 1px dotted lightgreen;
+}
+
+.big-text {
+  font-size: 4rem;
+  transition-property: all;
+  transition-duration: 2s;
+  text-shadow: 10px 10px 10px red;
+}
+
+.big-box {
+  border: 3px double violet;
+  padding: 2rem;
+}
