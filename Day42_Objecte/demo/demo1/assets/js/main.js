@@ -220,9 +220,9 @@ console.log(superTrainer);
 // Als array kann ich drüber mapen oder forEach
 
 superTrainer.forEach((trainer) => {
-  const html = `div
-    <h2>${trainer.name}</h2>
-    <h2>${trainer.city}</h2>
+  const html = `<div style="background-color:red">
+    <h2 style="margin:1rem; border: 2px solid green">${trainer.name}</h2>
+    <h2 style="margin:1rem; border: 2px solid blue">${trainer.city}</h2>
     </div> `;
   //   document.body.innerHTML += html;
   // andere version, kompliziert
@@ -237,3 +237,5 @@ superTrainer.forEach((trainer) => {
   //
   console.log(`${trainer.name} wohnt in ${trainer.city}`);
 });
+
+// Zum Mapen und for each brauchen ein Array , da können unsere objekte in arrays unwandeln
