@@ -79,22 +79,41 @@ titles.map((title) => {
 
 // ----------- Zellen---
 
+console.log("test-------------");
+
 let row = edelMetallPreise.forEach((metal) => {
-  let metalName = metal.name;
-  let preis = metal.preiseGramEuro;
-  let change = metal.veraenderung;
+  // --- Lang Version
+  //   let metalName = metal.name;
+  //   let preis = metal.preiseGramEuro;
+  //   let change = metal.veraenderung;
+  //   let tr = document.createElement("tr");
+  //   table.appendChild(tr);
+  //   let thName = document.createElement("td");
+  //   thName.style.border = "1px solid gray";
+  //   let thPreis = document.createElement("td");
+  //   thPreis.style.border = "1px solid gray";
+  //   let thChange = document.createElement("td");
+  //   thChange.style.border = "1px solid gray";
+  //   tr.appendChild(thName);
+  //   tr.appendChild(thPreis);
+  //   tr.appendChild(thChange);
+  //   thName.textContent = metalName;
+  //   thPreis.textContent = preis;
+  //   thChange.textContent = change;
+  // --- Compact Version
   let tr = document.createElement("tr");
   table.appendChild(tr);
-  let thName = document.createElement("td");
-  thName.style.border = "1px solid gray";
-  let thPreis = document.createElement("td");
-  thPreis.style.border = "1px solid gray";
-  let thChange = document.createElement("td");
-  thChange.style.border = "1px solid gray";
-  tr.appendChild(thName);
-  tr.appendChild(thPreis);
-  tr.appendChild(thChange);
-  thName.textContent = metalName;
-  thPreis.textContent = preis;
-  thChange.textContent = change;
+  for (const key in metal) {
+    // jede value des Objects
+    const value = metal[key];
+    console.log(value);
+    // wir  machen eine zelle
+    let td = document.createElement("td");
+    // wir fügen diese zelle an den row von oben
+    tr.appendChild(td);
+    // wir geben der value
+    td.textContent = value;
+    // styles
+    td.style.border = "1px solid gray";
+  }
 });
