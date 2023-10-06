@@ -66,3 +66,9 @@ copyArryAlphabeticOrder.sort((a, b) => {
 });
 
 console.log("result", copyArryAlphabeticOrder);
+
+// !ADD elisas version:
+
+// console.log(singers.sort((a, b) => a.name.localeCompare(b.name)));
+
+//Komentar von mir: in der aufgabe stand, dass man sort, if und return nutzen müssen?!
