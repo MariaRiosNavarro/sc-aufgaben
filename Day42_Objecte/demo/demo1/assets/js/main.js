@@ -183,3 +183,57 @@ console.log(person4.sozialMedia.insta.bild);
 
 console.log(person4["sozialMedia"].linkedin);
 console.log(person4.sozialMedia["linkedin"]);
+
+// so können es auch raus nehmen, etwas schwieriger
+
+const valuesPerson4 = Object.values(person4.sozialMedia);
+console.log("arrys von values", valuesPerson4);
+console.log(valuesPerson4[0]);
+
+// so becomen das Array züruckt
+
+console.log("array zuruck", person4.hobbies);
+// #Objecte in Array- sehr wichtig und häufig
+
+const superTrainer = [
+  {
+    name: "Marzio",
+    city: "Tutzing",
+  },
+  {
+    name: "Elisa",
+    test: {
+      tiefer: "not tiefer",
+    },
+    city: "Bremen",
+  },
+  {
+    name: "Maagda",
+    city: "Hamburg",
+  },
+];
+
+// Häufigste form ein daten Bank
+
+console.log(superTrainer);
+
+// Als array kann ich drüber mapen oder forEach
+
+superTrainer.forEach((trainer) => {
+  const html = `div
+    <h2>${trainer.name}</h2>
+    <h2>${trainer.city}</h2>
+    </div> `;
+  //   document.body.innerHTML += html;
+  // andere version, kompliziert
+
+  //   -beforebeginn
+  // - afterbeginn
+  // -beforeend
+  // -afterend
+
+  document.body.insertAdjacentHTML("afterbegin", html);
+
+  //
+  console.log(`${trainer.name} wohnt in ${trainer.city}`);
+});
