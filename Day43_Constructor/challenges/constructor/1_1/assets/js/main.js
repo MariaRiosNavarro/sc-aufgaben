@@ -12,5 +12,5 @@ class Ball {
 const ball1 = new Ball();
 const ball2 = new Ball("super");
 
-console.log(ball1);
-console.log(ball2);
+console.log(ball1); //regular
+console.log(ball2); //super
