@@ -56,3 +56,102 @@ console.log(iphone15);
 // ruf der description
 
 iphone15.description();
+
+// # ========= Class Vererbung mit extend =====
+
+console.log(
+  "%c-----------Class Vererbung mit extend",
+  "background:red; color: white"
+);
+
+// extend ist das schlüsselwort für die vererbung
+
+// !===== super =====
+
+// Das keyword super() macht es leicht für uns ein constructor noch wiederverwendbarer zu machen.
+
+// mit super()
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+// wir wollen ein neue konstrukter das eigentlich die gleiche parameter hat:
+
+class Student extends Person {
+  constructor(name, age, schoolClass) {
+    super(name, age);
+    // this.name = name;
+    // this.age = age;
+    this.schoolClass = schoolClass;
+  }
+}
+
+const student = new Student("Tim", 10, 4);
+
+console.log(student);
+
+// erstellen teacher
+
+class Teacher extends Student {
+  constructor(name, age, schoolClass, classSize) {
+    super(name, age, schoolClass);
+    // this.name = name;
+    // this.age = age;
+    this.classSize = classSize;
+  }
+}
+
+const teacher = new Teacher("Alex", 40, 4, 28);
+console.log(teacher);
+
+//  um nicht so viel code so widerholen, können den "super" keyword arbeiten
+
+// ! -----   Setter Nethode benutzen um Eigentschaften zu prüfen bevor es geschrieben wird--
+
+class superHero {
+  constructor(name, age) {
+    this.name = name;
+    this.setAge(age);
+  }
+
+  // hier prüfen ob age eine Number ist bevor wir es schreiben
+
+  setAge(age) {
+    if (typeof age === "number") {
+      this.age = age;
+    } else {
+      this.age = "ungültige wert";
+    }
+  }
+
+  hello() {
+    console.log(`Ich bin ${this.name} und ich bin ${this.age} Jahre alt`);
+  }
+  setName(newName) {
+    this.name = newName;
+  }
+}
+
+const superHero1 = new superHero("Xman", "55");
+const superHero2 = new superHero("Hehe", 22);
+console.log(superHero1); // in age ungültige wert
+console.log(superHero2); // in age 22
+
+superHero1.hello();
+superHero2.hello();
+
+// mit diesen beispiel können ffehler beheben und in unseren logs sehen ob die werte falsch sind, wichtig in datenbanken und backend um fehler case zu untersuchen
+
+// ! si sollten wir werte nicht überschrieben
+
+superHero2.name = "Superman"; //funktioniert aber ist nicht empfehlenswert
+superHero2.hello();
+
+// !Bessere metode; so sollten wir werte ändern in ein constructor (setName() hintzufügen)
+
+superHero2.setName("yayaax");
+superHero2.hello();
