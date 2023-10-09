@@ -37,7 +37,7 @@ console.log("%c-----------ClassContructor", "background:red; color: white");
 class Handy {
   constructor(herstellerParam, modelParam, jahrParam) {
     this.hersteller = herstellerParam;
-    this.modelParam = modelParam;
+    this.model = modelParam;
     this.jahr = jahrParam;
   }
 
