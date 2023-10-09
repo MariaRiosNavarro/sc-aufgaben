@@ -164,3 +164,64 @@ const data = {
 };
 
 // mehrfachvererbung sehr vorsichtig, es muss alles in context zusammen bleiben. geht nicht gebaude zu teacher...
+
+//# mehrere Klassen erweitern (extenden)
+
+// Diese Zeile gibt einen formatierten Hinweis in der Konsole aus.
+// Der Text hat einen roten Hintergrund und weiße Schrift.
+console.log(
+  "%c mehrere Klassen erweitern (extenden)",
+  "background: red; color: white"
+);
+
+// Hier wird die Basisklasse "Animal" definiert.
+class Animal {
+  // Der Konstruktor wird aufgerufen, wenn eine Instanz dieser Klasse erstellt wird.
+  // Er nimmt den Namen des Tieres als Argument und weist ihn der Instanzvariable "name" zu.
+  constructor(name) {
+    this.name = name;
+  }
+
+  // Diese Methode "speak" wird in allen abgeleiteten Klassen verwendet.
+  // Sie gibt eine Nachricht aus, die den Namen des Tiers enthält, gefolgt von "makes a sound".
+  speak() {
+    console.log(`${this.name} makes a sound`);
+  }
+}
+
+// Hier wird die Klasse "Dog" definiert, die von "Animal" erbt.
+class Dog extends Animal {
+  // Diese Methode "speak" wird in "Dog" überschrieben.
+  // Sie gibt eine Nachricht aus, die den Namen des Hundes enthält, gefolgt von "barks".
+  speak() {
+    console.log(`${this.name} barks`);
+  }
+}
+
+// Hier wird die Klasse "Labrador" definiert, die von "Dog" erbt.
+class Labrador extends Dog {
+  // Der Konstruktor nimmt den Namen und das Alter des Labradors als Argumente.
+  // "super(name)" ruft den Konstruktor der übergeordneten Klasse ("Dog") auf und übergibt den Namen.
+  constructor(name, age) {
+    super(name); // Aufruf des Konstruktors der Elternklasse.
+    this.age = age; // Das Alter des Labradors wird der Instanzvariable "age" zugewiesen.
+  }
+
+  // Diese Methode "speakLoud" ist spezifisch für Labradors.
+  // Sie gibt eine Nachricht aus, die den Namen des Labradors enthält, gefolgt von "barks loudly".
+  speakLoud() {
+    console.log(`${this.name} barks loudly`);
+  }
+}
+
+// Hier wird eine Instanz der Klasse "Labrador" mit dem Namen "Buddy" und dem Alter "5" erstellt.
+const myLabrador = new Labrador("Buddy", 5);
+
+// Die Instanz "myLabrador" wird in der Konsole ausgegeben, um ihre Eigenschaften anzuzeigen.
+console.log(myLabrador);
+
+// Die Methode "speak" der Instanz "myLabrador" wird aufgerufen und gibt "Buddy barks" aus.
+myLabrador.speak(); // Ausgabe: "Buddy barks"
+
+// Die Methode "speakLoud" der Instanz "myLabrador" wird aufgerufen und gibt "Buddy barks loudly" aus.
+myLabrador.speakLoud(); // Ausgabe: "Buddy barks loudly"
