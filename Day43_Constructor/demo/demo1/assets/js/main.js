@@ -96,9 +96,9 @@ console.log(student);
 
 // erstellen teacher
 
-class Teacher extends Student {
-  constructor(name, age, schoolClass, classSize) {
-    super(name, age, schoolClass);
+class Teacher extends Person {
+  constructor(name, age, classSize) {
+    super(name, age);
     // this.name = name;
     // this.age = age;
     this.classSize = classSize;
@@ -155,3 +155,12 @@ superHero2.hello();
 
 superHero2.setName("yayaax");
 superHero2.hello();
+
+// Wir mache ich eine oberklasse: Array
+
+const data = {
+  student: new Student("Thomas", 10, 2),
+  teacher: new Teacher("Alex", 40),
+};
+
+// mehrfachvererbung sehr vorsichtig, es muss alles in context zusammen bleiben. geht nicht gebaude zu teacher...
