@@ -42,11 +42,15 @@ let wochenTag = [
 // console.log("getSeconds()->", today.getSeconds()); //33
 // console.log("getMilliseconds()->", today.getMilliseconds()); //549
 
-// Aufgabe mit extra (aktualisieren/echte Uhr)
+// Aufgabe mit extra (aktualisieren/echte Uhr) // und anderen Zeit
+
+// --FallB: Wenn ich eine andere Uhr benutzen wurde,  let today = new Date(1977, 0, 0, 0);
 
 let clock = () => {
+  // --FallB: Sollte hier dass auch:  today = new Date( new Date(today).setSeconds(new Date(today).getSeconds() + 1)
   let today = new Date();
   const wrapper = document.querySelector('[data-js="clock-wrapper"]');
+  const wrapperPM = document.querySelector('[data-js="clock-wrapper2"]');
 
   let year = today.getFullYear();
   let monthIndex = today.getMonth();
@@ -56,6 +60,17 @@ let clock = () => {
   let seconds = today.getSeconds();
   let weekDay = today.toLocaleDateString("default", { weekday: "long" });
   let monthName = monate[monthIndex];
+
+  // transformieren von 24 hours  into 12 hour for clock2 in wrapperPm
+  let meridiem = "AM";
+  let pmHour = 0;
+
+  if (hour < 12) {
+    meridiem = "AM";
+  } else {
+    meridiem = "PM";
+    pmHour = hour - 12;
+  }
 
   wrapper.innerHTML = `
 <div class="flex-row">
@@ -92,27 +107,47 @@ let clock = () => {
 </div>
 
 `;
+
+  wrapperPM.innerHTML = `
+<div class="flex-row">
+<div class="flex-column">
+  <span class="spanStyle">${weekDay}</span>
+  <span class="spanStyle">Wochentag</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${day}</span>
+  <span class="spanStyle">Tag</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${monthName}</span>
+  <span class="spanStyle">Monat</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${year}</span>
+  <span class="spanStyle">Jahr</span>
+</div>
+</div>
+<div class="flex-row">
+<div class="flex-column">
+  <span class="spanStyle">${pmHour < 10 ? `0${pmHour}` : pmHour}</span>
+  <span class="spanStyle">Stunden</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${minute < 10 ? `0${minute}` : minute}</span>
+  <span class="spanStyle">Minuten</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${seconds < 10 ? `0${seconds}` : seconds}</span>
+  <span class="spanStyle">Sekunden</span>
+</div>
+<div class="flex-column">
+  <span class="spanStyle">${meridiem}</span>
+</div>
+</div>
+
+`;
 };
 
 // Set interval jede secunde
 
 setInterval(clock, 1000);
-
-// #Ich nutze das nicht in diese Uhr aber wenn man PM oder AM brauchen würde
-
-// transformieren von 24 hours  into 12 hour
-// let meridiem = 'AM';
-
-// if(hour == 00){
-//     hour = 12
-//     meridiem = 'AM';
-// }
-// else if( hour == 12 ){
-//     meridiem = 'PM';
-// }
-// else if( hour > 12){
-//     hour = hour - 12
-//     meridiem = 'PM';
-// }
-
-// checkMeridiem.textContent = meridiem;
