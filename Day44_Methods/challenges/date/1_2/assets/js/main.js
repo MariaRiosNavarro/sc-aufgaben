@@ -103,18 +103,16 @@ setInterval(clock, 1000);
 // transformieren von 24 hours  into 12 hour
 // let meridiem = 'AM';
 
-// if(hour === 00){
+// if(hour == 00){
 //     hour = 12
 //     meridiem = 'AM';
 // }
-// else if( hour === 12 ){
+// else if( hour == 12 ){
 //     meridiem = 'PM';
 // }
 // else if( hour > 12){
 //     hour = hour - 12
 //     meridiem = 'PM';
 // }
-
-// Und dann als textContent mit ternary
 
 // checkMeridiem.textContent = meridiem;
