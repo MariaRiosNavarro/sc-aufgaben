@@ -60,7 +60,7 @@ console.log("getFullYear()->", date9);
 //* getMonth() - yahr
 
 let date10 = new Date().getMonth();
-console.log("getMonth()()->", date10);
+console.log("getMonth()->", date10);
 
 //* getDate() - Tag
 
