@@ -16,7 +16,7 @@ console.log(day5.getDay());
 
 const askWorkDay = (day) => {
   let weekDay = day.getDay(); //index von der woche
-  weekDay > 5 || weekDay === 0 //für alle index über 5 und 0 (Samstag & Sonntag)
+  weekDay > 5 || weekDay === 0 //für alle index über 5 und 0 (Samstag & Sonntag)// kann man auch weekDay === 6 stat >5
     ? console.log("Wochenende")
     : console.log("Arbeitstag");
 };
