@@ -11,6 +11,19 @@ html {
   font-family: Helvetica;
 }
 
+h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+  color: bisque;
+}
+
+main {
+  background-color: rgb(56, 54, 54);
+  width: 100vw;
+  height: 100vh;
+}
+
 .wrapper {
   background-color: rgb(56, 54, 54);
   height: auto;
