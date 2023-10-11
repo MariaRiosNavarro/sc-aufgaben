@@ -26,7 +26,11 @@ const updateTimer = () => {
   timeOutput.innerHTML = `${date.getMinutes()}:${
     outSeconds < 10 ? `0${outSeconds}` : outSeconds
   }`;
-  date.setSeconds(date.getSeconds() - 1);
+  if (date.getSeconds() === 0 && date.getMinutes() === 0) {
+    date.setSeconds(date.getSeconds());
+  } else {
+    date.setSeconds(date.getSeconds() - 1);
+  }
 };
 
 // Interval startMinCountdown & restartMinCountdown sind die gleiche funktion
