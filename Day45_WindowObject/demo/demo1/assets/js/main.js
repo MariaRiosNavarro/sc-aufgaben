@@ -1,3 +1,14 @@
+// #BOM (Browser Object Model)
+// bezieht sich auf die Gruppe
+// von Objekten und Schnittstellen,
+//  die von Webbrowsern bereitgestellt
+//  werden, um auf browserbezogene
+//  Funktionen zuzugreifen.
+//  Das BOM enthält Dinge wie das
+//   Window-Objekt, das Dokument-Objekt
+//   , den Navigator und andere
+//   browserbezogene APIs.
+
 // # Window Object: representiert das geöffnete fensterr im Browser
 // JS window greift auf das Browserfenster zu mit u.a. Breite /
 // Hoehe des Viewports, Event und Timern zu
