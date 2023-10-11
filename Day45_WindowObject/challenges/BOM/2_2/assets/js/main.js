@@ -23,9 +23,11 @@ minutesInput.addEventListener("input", () => {
 
 const updateTimer = () => {
   const outSeconds = date.getSeconds();
+  //   0 hinzufügen bei der sekunden, wenn der nummer < 10 ist
   timeOutput.innerHTML = `${date.getMinutes()}:${
     outSeconds < 10 ? `0${outSeconds}` : outSeconds
   }`;
+  //   wenn die Timer zu ende kommt, bleibt so wie es ist, ansonstens immer -1;
   if (date.getSeconds() === 0 && date.getMinutes() === 0) {
     date.setSeconds(date.getSeconds());
   } else {
