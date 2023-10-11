@@ -5,3 +5,24 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: lightblue;
+  width: 100%;
+  height: 100vh;
+  font-family: Helvetica;
+  padding: 2rem;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
