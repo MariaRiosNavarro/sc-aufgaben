@@ -8,7 +8,19 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <div id="minuteCountdownBereich">
+        <p>Minuten Countdown:</p>
+        <div id="time">00:00</div>
+        <input id="minutes" type="text" placeholder=" Minuten übrig..." />
+        <br />
+        <button onclick="startMinCountdown()">Start Countdown</button>
+        <br />
+        <button onclick="pauseMinCountdown()">Pause Countdown</button>
+        <br />
+        <button onclick="restartMinCountdown()">Restart Countdown</button>
+      </div>
+    </main>
     <footer></footer>
     <script src="./assets/js/main.js"></script>
   </body>
