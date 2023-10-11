@@ -148,8 +148,8 @@ superHero2.hello();
 
 // ! si sollten wir werte nicht überschrieben
 
-superHero2.name = "Superman"; //funktioniert aber ist nicht empfehlenswert
-superHero2.hello();
+// superHero2.name = "Superman"; //funktioniert aber ist nicht empfehlenswert
+// superHero2.hello();
 
 // !Bessere metode; so sollten wir werte ändern in ein constructor (setName() hintzufügen)
 
