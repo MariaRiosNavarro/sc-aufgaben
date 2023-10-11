@@ -111,4 +111,68 @@ document.querySelector("#back").addEventListener("click", () => {
 
 // wenn jemand in unsere seite besucht und ein button für zurück click zb beim ein katalog
 
-// *
+// # Javascript Time Events
+
+//code nach zeit intervale
+
+//Window Object ermöglich die Ausführung von Code zu bestimmten Zeitintervalen. Die Wichtigsten Methoden
+
+//* setTimeout(Funktion, intervelInMilisekunden) führt eine funktion aus, nach dem an ein angegebene Anzahl von Milisekunden gewartet würde
+
+const konsole = () => {
+  console.log("hier was");
+};
+
+const konsoleAusgabeLoeschen = () => {
+  console.clear();
+};
+
+// setTimeout(konsole, 2000);
+// setTimeout(konsoleAusgabeLoeschen, 4000);
+
+//* setInterval(Funktion, intervelInMilisekunden)
+
+// const interval = setInterval(konsole, 2000);
+// setInterval(konsoleAusgabeLoeschen, 10000);
+
+document.querySelector("#interval-loeschen").addEventListener("click", () => {
+  clearInterval(interval);
+});
+
+// *so kann man ein setIntervall in eine callback schreiben
+
+// Neu
+
+// setInterval(()=>{
+//     console.log("hello");
+// }, 1000)
+
+// alt
+
+// setInterval(function(){
+//     console.log('Moin');
+// }, 3000)
+
+// !EventTimer
+
+const zieldatum = new Date(2023, 10, 1); //1 nov nächste feiertag
+
+const timeraktualisiert = () => {
+  const heute = new Date();
+  const differenzMilisekunden = zieldatum - heute; //milisek
+  console.log(differenzMilisekunden);
+  const verbleibendeTage = Math.floor(
+    differenzMilisekunden / (1000 * 60 * 60 * 24)
+  ); //milisekunden umrechenen in tage
+  console.log(verbleibendeTage); //20 tage
+  //Anzeige Aktualisieren
+  document.querySelector(
+    "#timer"
+  ).innerHTML = `Noch ${verbleibendeTage} bis frei 🍀`;
+};
+
+// Um das zu automatieren dass immer läuft
+
+timeraktualisiert();
+
+setInterval(timeraktualisiert, 360000);
