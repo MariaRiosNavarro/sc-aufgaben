@@ -3,11 +3,11 @@
 const timeOutput = document.getElementById("time");
 const minutesInput = document.getElementById("minutes");
 
-const date = new Date(1970, 1);
+const date = new Date(1970, 1); // date fängt schon von 0 min 0 sec 0 milisec
 
 let minutes = 0;
 
-// Nehmen den Value
+// Nehmen den Value, wichtig return date, um bei der updateTimer zu nutzen
 
 minutesInput.addEventListener("input", () => {
   minutes = minutesInput.value;
@@ -30,12 +30,13 @@ const updateTimer = () => {
 };
 
 // Interval startMinCountdown & restartMinCountdown sind die gleiche funktion
+// wichtig return interval, damit wir danach enfernen können
 
 let interval;
 
 const startMinCountdown = () => {
   interval = setInterval(updateTimer, 1000);
-  console.log(date);
+  minutesInput.value = ""; //Enfernen der value aus der Input feld
   return interval;
 };
 
@@ -44,6 +45,5 @@ const pauseMinCountdown = () => {
 };
 const restartMinCountdown = () => {
   interval = setInterval(updateTimer, 1000);
-  console.log(date);
   return interval;
 };
