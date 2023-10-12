@@ -57,8 +57,72 @@
 
 // .then((response) => console.log(response));im body sind die daten aber kann ich nicht lesen, ich muss die in json unwandeln
 
-fetch("../filmData.json")
+// fetch("./assets/js/db/filmData.json") // wenn data in assets/js/db/filmData.js
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
+
+let films;
+
+fetch("./filmData.json")
+  .then((response) => response.json()) // wenn data neben index.html
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error Message", error);
+  });
+
+console.log(films);
+
+// Wir fetchen was echtes
+fetch("https://fakestoreapi.com/products")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
+    const products = data;
+    products.forEach((element) => {
+      let name = element.title;
+      let description = element.description;
+      let price = element.price;
+      let id = element.id;
+      let title = document.createElement("h3");
+      title.textContent = name;
+      let desc = document.createElement("p");
+      desc.textContent = description;
+      let pric = document.createElement("p");
+      pric.textContent = price;
+      let idr = document.createElement("span");
+      idr.textContent = id;
+
+      let card = document.createElement("section");
+      card.append(title, desc, pric, idr);
+
+      document.body.append(card);
+
+      // Und wenn wir ein button in jeder element wollen? Mussen hier machen und ein fetch hier machen (fetch in fetch)
+
+      let moreInfo = document.createElement("button");
+      moreInfo.textContent = "More Infos";
+      moreInfo.addEventListener("click", () => {
+        fetch(`https://fakestoreapi.com/products/${id}`)
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+
+      card.append(moreInfo);
+    });
+  });
+
+//# Um die daten RAUS zu holen müssen drin in then bleiben
+
+let url = "https://fakestoreapi.com/products";
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error Message", error);
   });
