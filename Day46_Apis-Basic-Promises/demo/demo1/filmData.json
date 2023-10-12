@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": "2010"
+  },
+  {
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": "2014"
+  },
+  {
+    "title": "The Matrix",
+    "director": "Lana and Lilly Wachowski",
+    "year": "1999"
+  },
+  {
+    "title": "Blade Runner 2049",
+    "director": "Denis Villeneuve",
+    "year": "2017"
+  },
+  {
+    "title": "Ex Machina",
+    "director": "Alex Garland",
+    "year": "2014"
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "director": "Michel Gondry",
+    "year": "2004"
+  },
+  {
+    "title": "District 9",
+    "director": "Neill Blomkamp",
+    "year": "2009"
+  },
+  {
+    "title": "Gravity",
+    "director": "Alfonso Cuarón",
+    "year": "2013"
+  },
+  {
+    "title": "The Martian",
+    "director": "Ridley Scott",
+    "year": "2015"
+  },
+  {
+    "title": "Arrival",
+    "director": "Denis Villeneuve",
+    "year": "2016"
+  }
+]
